@@ -4,6 +4,7 @@ on:
     branches:
       - "stable"
       - "dev"
+      - "v2"
 jobs:
   call-notify-commit:
     uses: Dictionarry-Hub/parrot/.github/workflows/notify-commit.yml@v1
