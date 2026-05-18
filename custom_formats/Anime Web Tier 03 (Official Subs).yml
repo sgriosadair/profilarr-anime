@@ -1,0 +1,36 @@
+name: Anime Web Tier 03 (Official Subs)
+description: '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-03-official-subs)'
+tags:
+- Release Group Tier
+conditions:
+- name: WEBDL
+  negate: false
+  required: false
+  source: web_dl
+  type: source
+- name: WEBRIP
+  negate: false
+  required: false
+  source: webrip
+  type: source
+- name: HDTV
+  type: source
+  required: false
+  negate: false
+  source: television
+- name: SubsPlus+
+  negate: false
+  pattern: SubsPlus+
+  required: false
+  type: release_title
+- name: ZR
+  negate: false
+  pattern: ZR
+  required: false
+  type: release_title
+- name: Erai-Raws
+  negate: false
+  pattern: Erai-Raws
+  required: false
+  type: release_title
+tests: []

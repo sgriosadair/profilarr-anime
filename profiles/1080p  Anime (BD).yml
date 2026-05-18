@@ -1,0 +1,125 @@
+name: 1080p  Anime (BD)
+description: 1080p Anime (BD) targets high quality x265 Bluray and WEB Encodes
+tags:
+- 1080p
+- x265
+- Quality Focused
+upgradesAllowed: true
+minCustomFormatScore: 150
+upgradeUntilScore: 1400
+minScoreIncrement: 25
+custom_formats:
+- name: Anime BD Tier 01 (Top SeaDex Muxers)
+  score: 1300
+- name: Anime BD Tier 02 (SeaDex Muxers)
+  score: 1200
+- name: Anime BD Tier 03 (SeaDex Muxers)
+  score: 1000
+- name: Anime BD Tier 04 (SeaDex Muxers)
+  score: 900
+- name: Anime BD Tier 05 (Remuxes)
+  score: 800
+- name: Anime BD Tier 08 (Mini Encodes)
+  score: 700
+- name: Anime Web Tier 01 (Muxers)
+  score: 600
+- name: Anime Web Tier 02 (Top FanSubs)
+  score: 500
+- name: Anime Web Tier 03 (Official Subs)
+  score: 400
+- name: Anime Web Tier 04 (Official Subs)
+  score: 300
+- name: Anime BD Tier 06 (FanSubs)
+  score: 200
+- name: Anime BD Tier 07 (P2P-Scene)
+  score: 200
+- name: Anime Web Tier 05 (FanSubs)
+  score: 200
+- name: HEVC
+  score: 145
+- name: Anime Web Tier 06 (FanSubs)
+  score: 100
+- name: Remux
+  score: 60
+- name: Special Edition
+  score: 10
+- name: Repack3
+  score: 8
+- name: Repack2
+  score: 7
+- name: Repack1
+  score: 6
+- name: v4
+  score: 4
+- name: v3
+  score: 3
+- name: 1080p WEB-DL
+  score: 2
+- name: Crunchyroll
+  score: 2
+- name: HIDIVE
+  score: 2
+- name: v2
+  score: 2
+- name: VRV
+  score: 2
+- name: v1
+  score: 1
+- name: v0
+  score: -50
+- name: 3D
+  score: -9999
+- name: Anime LQ Groups
+  score: -9999
+- name: Anime Raws
+  score: -9999
+- name: AV1
+  score: -9999
+- name: B&W
+  score: -9999
+- name: BeyondHD
+  score: -9999
+- name: Dolby Vision (Without Fallback)
+  score: -9999
+- name: Dubs Only
+  score: -9999
+- name: Extras
+  score: -9999
+- name: Full Disc
+  score: -9999
+- name: SD Bluray Encodes
+  score: -9999
+- name: Sing Along
+  score: -9999
+- name: Upscaled
+  score: -9999
+- name: VOSTFR
+  score: -9999
+- name: VP9
+  score: -9999
+- name: VVC
+  score: -9999
+custom_formats_radarr: []
+custom_formats_sonarr: []
+qualities:
+- id: -1
+  name: 1080p Anime
+  description: All capable of being indistinguishable from source. WEB-DL included
+    to not allow unknown encode to trump known WEB-DL.
+  qualities:
+  - id: 10
+    name: Bluray-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+  - id: 8
+    name: Remux-1080p
+  - id: 12
+    name: HDTV-1080p
+upgrade_until:
+  id: -1
+  name: 1080p Anime
+  description: All capable of being indistinguishable from source. WEB-DL included
+    to not allow unknown encode to trump known WEB-DL.
+language: must_japanese
