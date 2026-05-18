@@ -3913,2023 +3913,2023 @@ WHERE qp.name = '1080p  Anime (BD)' AND qg.quality_profile_name = qp.name AND qg
 -- Condition Type Inserts (Polymorphic)
 -- condition_patterns, condition_languages, condition_sources, etc.
 
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Aergia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Aergia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Arg0', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arg0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Legion', re.name
 FROM regular_expressions re
 WHERE re.name = 'Legion';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'OZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'OZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'SoM', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Vanilla', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vanilla';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'ZeroBuild', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZeroBuild';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Alt', re.name
 FROM regular_expressions re
 WHERE re.name = 'Alt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'ARC', re.name
 FROM regular_expressions re
 WHERE re.name = 'ARC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'aro', re.name
 FROM regular_expressions re
 WHERE re.name = 'aro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Baws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Baws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'BKC', re.name
 FROM regular_expressions re
 WHERE re.name = 'BKC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Brrrrrrr', re.name
 FROM regular_expressions re
 WHERE re.name = 'Brrrrrrr';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Chotab', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chotab';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Crow', re.name
 FROM regular_expressions re
 WHERE re.name = 'Crow';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'CsS', re.name
 FROM regular_expressions re
 WHERE re.name = 'CsS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'CUNNY', re.name
 FROM regular_expressions re
 WHERE re.name = 'CUNNY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Cunnysseur', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cunnysseur';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'D-Z0N3', re.name
 FROM regular_expressions re
 WHERE re.name = 'D-Z0N3';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Dae', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dae';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Datte13', re.name
 FROM regular_expressions re
 WHERE re.name = 'Datte13';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'DemiHuman', re.name
 FROM regular_expressions re
 WHERE re.name = 'DemiHuman';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Drag', re.name
 FROM regular_expressions re
 WHERE re.name = 'Drag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'FLFL', re.name
 FROM regular_expressions re
 WHERE re.name = 'FLFL';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'hydes', re.name
 FROM regular_expressions re
 WHERE re.name = 'hydes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'iKaos', re.name
 FROM regular_expressions re
 WHERE re.name = 'iKaos';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', re.name
 FROM regular_expressions re
 WHERE re.name = 'JySzE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', re.name
 FROM regular_expressions re
 WHERE re.name = 'LostYears';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lulu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Matsya', re.name
 FROM regular_expressions re
 WHERE re.name = 'Matsya';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'MC', re.name
 FROM regular_expressions re
 WHERE re.name = 'MC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'McBalls', re.name
 FROM regular_expressions re
 WHERE re.name = 'McBalls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Metal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Metal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Moxie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Moxie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Not-Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not-Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Noyr', re.name
 FROM regular_expressions re
 WHERE re.name = 'Noyr';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'NSDAB', re.name
 FROM regular_expressions re
 WHERE re.name = 'NSDAB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'pog42', re.name
 FROM regular_expressions re
 WHERE re.name = 'pog42';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'pyroneko', re.name
 FROM regular_expressions re
 WHERE re.name = 'pyroneko';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'RAI', re.name
 FROM regular_expressions re
 WHERE re.name = 'RAI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Reza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Shimatta', re.name
 FROM regular_expressions re
 WHERE re.name = 'Shimatta';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Smoke', re.name
 FROM regular_expressions re
 WHERE re.name = 'Smoke';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Spirale', re.name
 FROM regular_expressions re
 WHERE re.name = 'Spirale';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Thighs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Thighs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'UDF', re.name
 FROM regular_expressions re
 WHERE re.name = 'UDF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Yuki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yuki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'AC', re.name
 FROM regular_expressions re
 WHERE re.name = 'AC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ASC', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'AssMix', re.name
 FROM regular_expressions re
 WHERE re.name = 'AssMix';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Ayashii', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ayashii';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'B00BA', re.name
 FROM regular_expressions re
 WHERE re.name = 'B00BA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CBT', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CRUCiBLE', re.name
 FROM regular_expressions re
 WHERE re.name = 'CRUCiBLE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'CTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CyC', re.name
 FROM regular_expressions re
 WHERE re.name = 'CyC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Dekinai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dekinai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'EXP', re.name
 FROM regular_expressions re
 WHERE re.name = 'EXP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Flugel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Flugel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Galator', re.name
 FROM regular_expressions re
 WHERE re.name = 'Galator';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'GSK_kun', re.name
 FROM regular_expressions re
 WHERE re.name = 'GSK_kun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Holomux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Holomux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'IK', re.name
 FROM regular_expressions re
 WHERE re.name = 'IK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Kaizoku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaizoku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Kametsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kametsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'KH', re.name
 FROM regular_expressions re
 WHERE re.name = 'KH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'kuchikirukia', re.name
 FROM regular_expressions re
 WHERE re.name = 'kuchikirukia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'LazyRemux', re.name
 FROM regular_expressions re
 WHERE re.name = 'LazyRemux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'MK', re.name
 FROM regular_expressions re
 WHERE re.name = 'MK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Mysteria', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mysteria';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'NAN0', re.name
 FROM regular_expressions re
 WHERE re.name = 'NAN0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Pn8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pn8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Pookie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pookie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Quetzal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Quetzal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Rasetsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rasetsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Senjou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Senjou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ShowY', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShowY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'WBDP', re.name
 FROM regular_expressions re
 WHERE re.name = 'WBDP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'WSE', re.name
 FROM regular_expressions re
 WHERE re.name = 'WSE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Yoghurt', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yoghurt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'YURI', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ZOIO', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZOIO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'PMR', re.name
 FROM regular_expressions re
 WHERE re.name = 'PMR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'FLE', re.name
 FROM regular_expressions re
 WHERE re.name = 'FLE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'AOmundson', re.name
 FROM regular_expressions re
 WHERE re.name = 'AOmundson';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'ASO', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Bolshevik', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bolshevik';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Bulldog', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bulldog';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Cait-Sidhe', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cait-Sidhe';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chimera';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'CoalGirls', re.name
 FROM regular_expressions re
 WHERE re.name = 'CoalGirls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'D3', re.name
 FROM regular_expressions re
 WHERE re.name = 'D3';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Davinci', re.name
 FROM regular_expressions re
 WHERE re.name = 'Davinci';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'deanzel', re.name
 FROM regular_expressions re
 WHERE re.name = 'deanzel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Dragon-Releases', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dragon-Releases';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Foxtrot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'GHS', re.name
 FROM regular_expressions re
 WHERE re.name = 'GHS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'HaiveMind', re.name
 FROM regular_expressions re
 WHERE re.name = 'HaiveMind';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'hchcsen', re.name
 FROM regular_expressions re
 WHERE re.name = 'hchcsen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Iznjie Biznjie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'karios', re.name
 FROM regular_expressions re
 WHERE re.name = 'karios';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'kBaraka', re.name
 FROM regular_expressions re
 WHERE re.name = 'kBaraka';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'kmplx', re.name
 FROM regular_expressions re
 WHERE re.name = 'kmplx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Koitern', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koitern';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Koten_Gars', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koten_Gars';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Kulot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kulot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Lia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'MCLR', re.name
 FROM regular_expressions re
 WHERE re.name = 'MCLR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'mottoj', re.name
 FROM regular_expressions re
 WHERE re.name = 'mottoj';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'NH', re.name
 FROM regular_expressions re
 WHERE re.name = 'NH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'NTRM', re.name
 FROM regular_expressions re
 WHERE re.name = 'NTRM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Orphan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Orphan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'RMX', re.name
 FROM regular_expressions re
 WHERE re.name = 'RMX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SallySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'SallySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Scriptum', re.name
 FROM regular_expressions re
 WHERE re.name = 'Scriptum';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'ShadyCrab', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShadyCrab';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SNSbu', re.name
 FROM regular_expressions re
 WHERE re.name = 'SNSbu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SOLA', re.name
 FROM regular_expressions re
 WHERE re.name = 'SOLA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'THORA', re.name
 FROM regular_expressions re
 WHERE re.name = 'THORA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'UWU', re.name
 FROM regular_expressions re
 WHERE re.name = 'UWU';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'xPearse', re.name
 FROM regular_expressions re
 WHERE re.name = 'xPearse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Headpatter', re.name
 FROM regular_expressions re
 WHERE re.name = 'Headpatter';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'BluDragon', re.name
 FROM regular_expressions re
 WHERE re.name = 'BluDragon';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'D4C', re.name
 FROM regular_expressions re
 WHERE re.name = 'D4C';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'E.N.D', re.name
 FROM regular_expressions re
 WHERE re.name = 'E.N.D';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'PMR', re.name
 FROM regular_expressions re
 WHERE re.name = 'PMR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'Raizel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raizel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'REVO', re.name
 FROM regular_expressions re
 WHERE re.name = 'REVO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'SRLS', re.name
 FROM regular_expressions re
 WHERE re.name = 'SRLS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'TTGA', re.name
 FROM regular_expressions re
 WHERE re.name = 'TTGA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'VULCAN', re.name
 FROM regular_expressions re
 WHERE re.name = 'VULCAN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'FraMeSToR', re.name
 FROM regular_expressions re
 WHERE re.name = 'FraMeSToR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Afro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Afro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Akai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Akai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Almighty', re.name
 FROM regular_expressions re
 WHERE re.name = 'Almighty';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'ANE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Asenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'BlurayDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlurayDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bunny-Apocalypse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'CH', re.name
 FROM regular_expressions re
 WHERE re.name = 'CH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'EJF', re.name
 FROM regular_expressions re
 WHERE re.name = 'EJF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Exiled-Destiny', re.name
 FROM regular_expressions re
 WHERE re.name = 'Exiled-Destiny';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'FFF', re.name
 FROM regular_expressions re
 WHERE re.name = 'FFF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Final8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Final8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'GS', re.name
 FROM regular_expressions re
 WHERE re.name = 'GS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Harunatsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Harunatsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Impatience', re.name
 FROM regular_expressions re
 WHERE re.name = 'Impatience';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Inka-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Inka-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Judgement', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judgement';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Kantai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kantai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'LCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'LCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Licca', re.name
 FROM regular_expressions re
 WHERE re.name = 'Licca';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Nii-sama', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nii-sama';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'niizk', re.name
 FROM regular_expressions re
 WHERE re.name = 'niizk';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Nishi-Taku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nishi-Taku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'OnDeed', re.name
 FROM regular_expressions re
 WHERE re.name = 'OnDeed';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'orz', re.name
 FROM regular_expressions re
 WHERE re.name = 'orz';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'PAS', re.name
 FROM regular_expressions re
 WHERE re.name = 'PAS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'peachflavored', re.name
 FROM regular_expressions re
 WHERE re.name = 'peachflavored';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Saizen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Saizen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SCP-2223', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCP-2223';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SHiN-gx', re.name
 FROM regular_expressions re
 WHERE re.name = 'SHiN-gx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SmugCat', re.name
 FROM regular_expressions re
 WHERE re.name = 'SmugCat';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Soldado', re.name
 FROM regular_expressions re
 WHERE re.name = 'Soldado';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Sushi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Sushi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Vivid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vivid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Watashi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Watashi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Yabai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yabai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Zurako', re.name
 FROM regular_expressions re
 WHERE re.name = 'Zurako';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'A-L', re.name
 FROM regular_expressions re
 WHERE re.name = 'A-L';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'ANiHLS', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANiHLS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'CBM', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'DHD', re.name
 FROM regular_expressions re
 WHERE re.name = 'DHD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'DragsterPS', re.name
 FROM regular_expressions re
 WHERE re.name = 'DragsterPS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'HAiKU', re.name
 FROM regular_expressions re
 WHERE re.name = 'HAiKU';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'Hark0N', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hark0N';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'iAHD', re.name
 FROM regular_expressions re
 WHERE re.name = 'iAHD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'inid4c', re.name
 FROM regular_expressions re
 WHERE re.name = 'inid4c';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'KiyoshiStar', re.name
 FROM regular_expressions re
 WHERE re.name = 'KiyoshiStar';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'MCR', re.name
 FROM regular_expressions re
 WHERE re.name = 'MCR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'NPC', re.name
 FROM regular_expressions re
 WHERE re.name = 'NPC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'RedBlade', re.name
 FROM regular_expressions re
 WHERE re.name = 'RedBlade';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'RH', re.name
 FROM regular_expressions re
 WHERE re.name = 'RH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'SEV', re.name
 FROM regular_expressions re
 WHERE re.name = 'SEV';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'STRiFE', re.name
 FROM regular_expressions re
 WHERE re.name = 'STRiFE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'TENEIGHTY', re.name
 FROM regular_expressions re
 WHERE re.name = 'TENEIGHTY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'WaLMaRT', re.name
 FROM regular_expressions re
 WHERE re.name = 'WaLMaRT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'AkihitoSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Arukoru', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arukoru';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'EDGE', re.name
 FROM regular_expressions re
 WHERE re.name = 'EDGE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'EMBER', re.name
 FROM regular_expressions re
 WHERE re.name = 'EMBER';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'GHOST', re.name
 FROM regular_expressions re
 WHERE re.name = 'GHOST';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Judas', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'naiyas', re.name
 FROM regular_expressions re
 WHERE re.name = 'naiyas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nep_Blanc';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Prof', re.name
 FROM regular_expressions re
 WHERE re.name = 'Prof';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'ShirÏƒ', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShirÏƒ';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'YURASAKA', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURASAKA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'OZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'OZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Drag', re.name
 FROM regular_expressions re
 WHERE re.name = 'Drag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'hydes', re.name
 FROM regular_expressions re
 WHERE re.name = 'hydes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Lulu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lulu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'pog42', re.name
 FROM regular_expressions re
 WHERE re.name = 'pog42';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'UDF', re.name
 FROM regular_expressions re
 WHERE re.name = 'UDF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'YURI', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'CBT', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'CTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'CTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Dekinai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dekinai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'EXP', re.name
 FROM regular_expressions re
 WHERE re.name = 'EXP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Flugel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Flugel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Headpatter', re.name
 FROM regular_expressions re
 WHERE re.name = 'Headpatter';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Holomux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Holomux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'IK', re.name
 FROM regular_expressions re
 WHERE re.name = 'IK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Kametsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kametsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'KH', re.name
 FROM regular_expressions re
 WHERE re.name = 'KH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'kuchikirukia', re.name
 FROM regular_expressions re
 WHERE re.name = 'kuchikirukia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Mysteria', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mysteria';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Pookie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pookie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Quetzal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Quetzal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Rasetsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rasetsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Senjou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Senjou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'WBDP', re.name
 FROM regular_expressions re
 WHERE re.name = 'WBDP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'AOmundson', re.name
 FROM regular_expressions re
 WHERE re.name = 'AOmundson';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Cait-Sidhe', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cait-Sidhe';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'CoalGirls', re.name
 FROM regular_expressions re
 WHERE re.name = 'CoalGirls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'deanzel', re.name
 FROM regular_expressions re
 WHERE re.name = 'deanzel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'hchcsen', re.name
 FROM regular_expressions re
 WHERE re.name = 'hchcsen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Iznjie Biznjie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Iznjie Biznjie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'kBaraka', re.name
 FROM regular_expressions re
 WHERE re.name = 'kBaraka';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'kmplx', re.name
 FROM regular_expressions re
 WHERE re.name = 'kmplx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Koten_Gars', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koten_Gars';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'mottoj', re.name
 FROM regular_expressions re
 WHERE re.name = 'mottoj';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Orphan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Orphan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'SallySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'SallySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'THORA', re.name
 FROM regular_expressions re
 WHERE re.name = 'THORA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Almighty', re.name
 FROM regular_expressions re
 WHERE re.name = 'Almighty';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'ANE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'BlurayDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlurayDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'FFF', re.name
 FROM regular_expressions re
 WHERE re.name = 'FFF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Final8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Final8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Raizel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raizel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Saizen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Saizen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Zurako', re.name
 FROM regular_expressions re
 WHERE re.name = 'Zurako';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', '$tore-Chill', re.name
 FROM regular_expressions re
 WHERE re.name = '$tore-Chill';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', '0neshot', re.name
 FROM regular_expressions re
 WHERE re.name = '0neshot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'A-Destiny', re.name
 FROM regular_expressions re
 WHERE re.name = 'A-Destiny';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AceAres', re.name
 FROM regular_expressions re
 WHERE re.name = 'AceAres';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AhmadDev', re.name
 FROM regular_expressions re
 WHERE re.name = 'AhmadDev';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Chap', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Chap';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Land', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Land';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Time', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Time';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeDynastyEN', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeDynastyEN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeKuro', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeKuro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeRG', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeRG';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Animesubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Animesubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anitsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anitsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AniVoid', re.name
 FROM regular_expressions re
 WHERE re.name = 'AniVoid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ArataEnc', re.name
 FROM regular_expressions re
 WHERE re.name = 'ArataEnc';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AREY', re.name
 FROM regular_expressions re
 WHERE re.name = 'AREY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Ari', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ari';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'BJX', re.name
 FROM regular_expressions re
 WHERE re.name = 'BJX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'BlackLuster', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlackLuster';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'bonkai77', re.name
 FROM regular_expressions re
 WHERE re.name = 'bonkai77';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CameEsp', re.name
 FROM regular_expressions re
 WHERE re.name = 'CameEsp';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cat66', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cat66';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cerberus', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cerberus';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cleo', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cleo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CuaP', re.name
 FROM regular_expressions re
 WHERE re.name = 'CuaP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DaddySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'DaddySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DARKFLiX', re.name
 FROM regular_expressions re
 WHERE re.name = 'DARKFLiX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DBArabic', re.name
 FROM regular_expressions re
 WHERE re.name = 'DBArabic';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Deadmau- RAWS', re.name
 FROM regular_expressions re
 WHERE re.name = 'Deadmau- RAWS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DKB', re.name
 FROM regular_expressions re
 WHERE re.name = 'DKB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DP', re.name
 FROM regular_expressions re
 WHERE re.name = 'DP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DsunS', re.name
 FROM regular_expressions re
 WHERE re.name = 'DsunS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Emmid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Emmid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ExREN', re.name
 FROM regular_expressions re
 WHERE re.name = 'ExREN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'FAV', re.name
 FROM regular_expressions re
 WHERE re.name = 'FAV';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Fish', re.name
 FROM regular_expressions re
 WHERE re.name = 'Fish';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'FunArts', re.name
 FROM regular_expressions re
 WHERE re.name = 'FunArts';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'GERMini', re.name
 FROM regular_expressions re
 WHERE re.name = 'GERMini';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hakata Ramen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hakata Ramen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hall_of_C', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hall_of_C';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hatsuyuki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hatsuyuki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HAV1T', re.name
 FROM regular_expressions re
 WHERE re.name = 'HAV1T';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HENiL', re.name
 FROM regular_expressions re
 WHERE re.name = 'HENiL';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hitoku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hitoku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HollowRoxas', re.name
 FROM regular_expressions re
 WHERE re.name = 'HollowRoxas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HR', re.name
 FROM regular_expressions re
 WHERE re.name = 'HR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ICEBLUE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ICEBLUE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'iPUNISHER', re.name
 FROM regular_expressions re
 WHERE re.name = 'iPUNISHER';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'JacobSwaggedUp', re.name
 FROM regular_expressions re
 WHERE re.name = 'JacobSwaggedUp';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Johnny-englishsubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Johnny-englishsubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kallango', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kallango';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kanjouteki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kanjouteki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KEKMASTERS', re.name
 FROM regular_expressions re
 WHERE re.name = 'KEKMASTERS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kirion', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kirion';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KQRM', re.name
 FROM regular_expressions re
 WHERE re.name = 'KQRM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KRP', re.name
 FROM regular_expressions re
 WHERE re.name = 'KRP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'LoliHouse', re.name
 FROM regular_expressions re
 WHERE re.name = 'LoliHouse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'M@nI', re.name
 FROM regular_expressions re
 WHERE re.name = 'M@nI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'mal lu zen', re.name
 FROM regular_expressions re
 WHERE re.name = 'mal lu zen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Man.K', re.name
 FROM regular_expressions re
 WHERE re.name = 'Man.K';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Maximus', re.name
 FROM regular_expressions re
 WHERE re.name = 'Maximus';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'mdcx', re.name
 FROM regular_expressions re
 WHERE re.name = 'mdcx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Metaljerk', re.name
 FROM regular_expressions re
 WHERE re.name = 'Metaljerk';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MGD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MGD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniFreeza', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniFreeza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniMTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniMTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MinisCuba', re.name
 FROM regular_expressions re
 WHERE re.name = 'MinisCuba';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniTheatre', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniTheatre';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Mites', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mites';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Modders Bay', re.name
 FROM regular_expressions re
 WHERE re.name = 'Modders Bay';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Mr. Deadpool', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mr. Deadpool';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NemDiggers', re.name
 FROM regular_expressions re
 WHERE re.name = 'NemDiggers';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'neoHEVC', re.name
 FROM regular_expressions re
 WHERE re.name = 'neoHEVC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Nokou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nokou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NoobSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'NoobSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NS', re.name
 FROM regular_expressions re
 WHERE re.name = 'NS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Nyanpasu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nyanpasu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'OldCastle', re.name
 FROM regular_expressions re
 WHERE re.name = 'OldCastle';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pantsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pantsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pao', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pao';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'phazer11', re.name
 FROM regular_expressions re
 WHERE re.name = 'phazer11';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pixel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pixel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Plex Friendly', re.name
 FROM regular_expressions re
 WHERE re.name = 'Plex Friendly';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'PnPSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'PnPSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Polarwindz', re.name
 FROM regular_expressions re
 WHERE re.name = 'Polarwindz';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Project-gxs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Project-gxs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'PuyaSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'PuyaSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'QaS', re.name
 FROM regular_expressions re
 WHERE re.name = 'QaS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'QCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'QCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rando235', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rando235';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Ranger', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ranger';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rapta', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rapta';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Raze', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raze';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Reaktor', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reaktor';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'RightShiftBy2', re.name
 FROM regular_expressions re
 WHERE re.name = 'RightShiftBy2';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rip Time', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rip Time';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SAD', re.name
 FROM regular_expressions re
 WHERE re.name = 'SAD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Salieri', re.name
 FROM regular_expressions re
 WHERE re.name = 'Salieri';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Samir755', re.name
 FROM regular_expressions re
 WHERE re.name = 'Samir755';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SanKyuu', re.name
 FROM regular_expressions re
 WHERE re.name = 'SanKyuu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SEiN', re.name
 FROM regular_expressions re
 WHERE re.name = 'SEiN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'sekkusu&ok', re.name
 FROM regular_expressions re
 WHERE re.name = 'sekkusu&ok';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SHFS', re.name
 FROM regular_expressions re
 WHERE re.name = 'SHFS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'shincaps', re.name
 FROM regular_expressions re
 WHERE re.name = 'shincaps';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SLAX', re.name
 FROM regular_expressions re
 WHERE re.name = 'SLAX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Sokudo', re.name
 FROM regular_expressions re
 WHERE re.name = 'Sokudo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SRW', re.name
 FROM regular_expressions re
 WHERE re.name = 'SRW';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SSA', re.name
 FROM regular_expressions re
 WHERE re.name = 'SSA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'StrayGods', re.name
 FROM regular_expressions re
 WHERE re.name = 'StrayGods';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Suki Desu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Suki Desu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TeamTurquoize', re.name
 FROM regular_expressions re
 WHERE re.name = 'TeamTurquoize';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Tenrai Sensei', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tenrai Sensei';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TnF', re.name
 FROM regular_expressions re
 WHERE re.name = 'TnF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TOPKEK', re.name
 FROM regular_expressions re
 WHERE re.name = 'TOPKEK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Trix', re.name
 FROM regular_expressions re
 WHERE re.name = 'Trix';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'U3-Web', re.name
 FROM regular_expressions re
 WHERE re.name = 'U3-Web';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'UNBIASED', re.name
 FROM regular_expressions re
 WHERE re.name = 'UNBIASED';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'uP', re.name
 FROM regular_expressions re
 WHERE re.name = 'uP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'USD', re.name
 FROM regular_expressions re
 WHERE re.name = 'USD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Valenciano', re.name
 FROM regular_expressions re
 WHERE re.name = 'Valenciano';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'VipapkStudios', re.name
 FROM regular_expressions re
 WHERE re.name = 'VipapkStudios';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Wardevil', re.name
 FROM regular_expressions re
 WHERE re.name = 'Wardevil';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'WtF Anime', re.name
 FROM regular_expressions re
 WHERE re.name = 'WtF Anime';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'xiao-av1', re.name
 FROM regular_expressions re
 WHERE re.name = 'xiao-av1';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Yabai_Desu_NeRandomRemux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yabai_Desu_NeRandomRemux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'YakuboEncodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'YakuboEncodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'youshikibi', re.name
 FROM regular_expressions re
 WHERE re.name = 'youshikibi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'YuiSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'YuiSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Yun', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'zza', re.name
 FROM regular_expressions re
 WHERE re.name = 'zza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ToonsHub', re.name
 FROM regular_expressions re
 WHERE re.name = 'ToonsHub';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'AsukaRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'AsukaRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Beatrice-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Beatrice-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Daddy-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Daddy-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Fumi-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Fumi-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'IrizaRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'IrizaRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Kawaiika-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kawaiika-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'km', re.name
 FROM regular_expressions re
 WHERE re.name = 'km';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Koi-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koi-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Lilith-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lilith-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'LowPower-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'LowPower-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Moozzi2', re.name
 FROM regular_expressions re
 WHERE re.name = 'Moozzi2';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'NanakoRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'NanakoRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'NC-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'NC-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'neko-raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'neko-raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'New-raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'New-raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Ohys-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ohys-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Pandoratv-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pandoratv-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Raws-Maji', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raws-Maji';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'ReinForce', re.name
 FROM regular_expressions re
 WHERE re.name = 'ReinForce';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Scryous-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Scryous-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Seicher-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Seicher-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Shiniori-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Shiniori-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Arg0', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arg0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Baws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Baws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'LostYears', re.name
 FROM regular_expressions re
 WHERE re.name = 'LostYears';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'McBalls', re.name
 FROM regular_expressions re
 WHERE re.name = 'McBalls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Setsugen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Setsugen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'SoM', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Z4ST1N', re.name
 FROM regular_expressions re
 WHERE re.name = 'Z4ST1N';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'ZeroBuild', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZeroBuild';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Cyan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cyan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Dae', re.name
 FROM regular_expressions re
 WHERE re.name = 'Radarr - Dae';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Foxtrot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Gao', re.name
 FROM regular_expressions re
 WHERE re.name = 'Gao';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', re.name
 FROM regular_expressions re
 WHERE re.name = 'GSK_kun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', re.name
 FROM regular_expressions re
 WHERE re.name = 'Half-Baked';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'HatSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HatSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'MALD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MALD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not-Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Pizza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pizza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Reza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Slyfox', re.name
 FROM regular_expressions re
 WHERE re.name = 'Slyfox';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'SoLCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoLCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Tenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'SubsPlus+', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlus+';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'Erai-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Erai-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'BlueLobster', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlueLobster';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'GST', re.name
 FROM regular_expressions re
 WHERE re.name = 'GST';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'HorribleRips', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleRips';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'HorribleSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'KAN3D2M', re.name
 FROM regular_expressions re
 WHERE re.name = 'KAN3D2M';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'KiyoshiStar', re.name
 FROM regular_expressions re
 WHERE re.name = 'KiyoshiStar';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'Lia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'NanDesuKa', re.name
 FROM regular_expressions re
 WHERE re.name = 'NanDesuKa';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'URANIME', re.name
 FROM regular_expressions re
 WHERE re.name = 'URANIME';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'VARYG', re.name
 FROM regular_expressions re
 WHERE re.name = 'VARYG';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'ZigZag', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZigZag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'SubsPlease', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'Judas', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'ASW', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASW';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'GJM', re.name
 FROM regular_expressions re
 WHERE re.name = 'GJM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Kantai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kantai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'SobsPlease', re.name
 FROM regular_expressions re
 WHERE re.name = 'SobsPlease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Some-Stuffs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Asenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'DameDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'DameDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 1', 'Subsplease', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'Erai-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Erai-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'HorribleSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'Subsplus+', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlus+';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'VARYG', re.name
 FROM regular_expressions re
 WHERE re.name = 'VARYG';
@@ -6038,2023 +6038,2024 @@ VALUES ('Anime WEB-DL Tier 2', 'WEB', 'television');
 
 -- Condition Patterns (release_group -> regex links)
 
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Aergia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Aergia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Arg0', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arg0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Legion', re.name
 FROM regular_expressions re
 WHERE re.name = 'Legion';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'OZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'OZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'SoM', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Vanilla', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vanilla';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'ZeroBuild', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZeroBuild';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Alt', re.name
 FROM regular_expressions re
 WHERE re.name = 'Alt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'ARC', re.name
 FROM regular_expressions re
 WHERE re.name = 'ARC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'aro', re.name
 FROM regular_expressions re
 WHERE re.name = 'aro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Baws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Baws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'BKC', re.name
 FROM regular_expressions re
 WHERE re.name = 'BKC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Brrrrrrr', re.name
 FROM regular_expressions re
 WHERE re.name = 'Brrrrrrr';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Chotab', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chotab';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Crow', re.name
 FROM regular_expressions re
 WHERE re.name = 'Crow';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'CsS', re.name
 FROM regular_expressions re
 WHERE re.name = 'CsS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'CUNNY', re.name
 FROM regular_expressions re
 WHERE re.name = 'CUNNY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Cunnysseur', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cunnysseur';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'D-Z0N3', re.name
 FROM regular_expressions re
 WHERE re.name = 'D-Z0N3';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Dae', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dae';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Datte13', re.name
 FROM regular_expressions re
 WHERE re.name = 'Datte13';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'DemiHuman', re.name
 FROM regular_expressions re
 WHERE re.name = 'DemiHuman';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Drag', re.name
 FROM regular_expressions re
 WHERE re.name = 'Drag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'FLFL', re.name
 FROM regular_expressions re
 WHERE re.name = 'FLFL';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'hydes', re.name
 FROM regular_expressions re
 WHERE re.name = 'hydes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'iKaos', re.name
 FROM regular_expressions re
 WHERE re.name = 'iKaos';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'JySzE', re.name
 FROM regular_expressions re
 WHERE re.name = 'JySzE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'LostYears', re.name
 FROM regular_expressions re
 WHERE re.name = 'LostYears';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Lulu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lulu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Matsya', re.name
 FROM regular_expressions re
 WHERE re.name = 'Matsya';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'MC', re.name
 FROM regular_expressions re
 WHERE re.name = 'MC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'McBalls', re.name
 FROM regular_expressions re
 WHERE re.name = 'McBalls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Metal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Metal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Moxie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Moxie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Not-Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not-Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Noyr', re.name
 FROM regular_expressions re
 WHERE re.name = 'Noyr';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'NSDAB', re.name
 FROM regular_expressions re
 WHERE re.name = 'NSDAB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'pog42', re.name
 FROM regular_expressions re
 WHERE re.name = 'pog42';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'pyroneko', re.name
 FROM regular_expressions re
 WHERE re.name = 'pyroneko';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'RAI', re.name
 FROM regular_expressions re
 WHERE re.name = 'RAI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Reza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Shimatta', re.name
 FROM regular_expressions re
 WHERE re.name = 'Shimatta';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Smoke', re.name
 FROM regular_expressions re
 WHERE re.name = 'Smoke';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Spirale', re.name
 FROM regular_expressions re
 WHERE re.name = 'Spirale';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Thighs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Thighs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'UDF', re.name
 FROM regular_expressions re
 WHERE re.name = 'UDF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Yuki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yuki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'AC', re.name
 FROM regular_expressions re
 WHERE re.name = 'AC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ASC', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'AssMix', re.name
 FROM regular_expressions re
 WHERE re.name = 'AssMix';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Ayashii', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ayashii';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'B00BA', re.name
 FROM regular_expressions re
 WHERE re.name = 'B00BA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CBT', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CRUCiBLE', re.name
 FROM regular_expressions re
 WHERE re.name = 'CRUCiBLE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'CTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'CyC', re.name
 FROM regular_expressions re
 WHERE re.name = 'CyC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Dekinai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dekinai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'EXP', re.name
 FROM regular_expressions re
 WHERE re.name = 'EXP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Flugel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Flugel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Galator', re.name
 FROM regular_expressions re
 WHERE re.name = 'Galator';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'GSK_kun', re.name
 FROM regular_expressions re
 WHERE re.name = 'GSK_kun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Holomux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Holomux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'IK', re.name
 FROM regular_expressions re
 WHERE re.name = 'IK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Kaizoku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaizoku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Kametsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kametsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'KH', re.name
 FROM regular_expressions re
 WHERE re.name = 'KH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'kuchikirukia', re.name
 FROM regular_expressions re
 WHERE re.name = 'kuchikirukia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'LazyRemux', re.name
 FROM regular_expressions re
 WHERE re.name = 'LazyRemux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'MK', re.name
 FROM regular_expressions re
 WHERE re.name = 'MK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Mysteria', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mysteria';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'NAN0', re.name
 FROM regular_expressions re
 WHERE re.name = 'NAN0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Pn8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pn8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Pookie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pookie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Quetzal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Quetzal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Rasetsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rasetsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Senjou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Senjou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ShowY', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShowY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'WBDP', re.name
 FROM regular_expressions re
 WHERE re.name = 'WBDP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'WSE', re.name
 FROM regular_expressions re
 WHERE re.name = 'WSE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Yoghurt', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yoghurt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'YURI', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ZOIO', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZOIO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'PMR', re.name
 FROM regular_expressions re
 WHERE re.name = 'PMR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'FLE', re.name
 FROM regular_expressions re
 WHERE re.name = 'FLE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'AOmundson', re.name
 FROM regular_expressions re
 WHERE re.name = 'AOmundson';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'ASO', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Bolshevik', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bolshevik';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Bulldog', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bulldog';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Cait-Sidhe', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cait-Sidhe';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Chimera', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chimera';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'CoalGirls', re.name
 FROM regular_expressions re
 WHERE re.name = 'CoalGirls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'D3', re.name
 FROM regular_expressions re
 WHERE re.name = 'D3';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Davinci', re.name
 FROM regular_expressions re
 WHERE re.name = 'Davinci';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'deanzel', re.name
 FROM regular_expressions re
 WHERE re.name = 'deanzel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Dragon-Releases', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dragon-Releases';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Foxtrot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Foxtrot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'GHS', re.name
 FROM regular_expressions re
 WHERE re.name = 'GHS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'HaiveMind', re.name
 FROM regular_expressions re
 WHERE re.name = 'HaiveMind';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'hchcsen', re.name
 FROM regular_expressions re
 WHERE re.name = 'hchcsen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Iznjie Biznjie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Iznjie Biznjie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'karios', re.name
 FROM regular_expressions re
 WHERE re.name = 'karios';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'kBaraka', re.name
 FROM regular_expressions re
 WHERE re.name = 'kBaraka';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'kmplx', re.name
 FROM regular_expressions re
 WHERE re.name = 'kmplx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Koitern', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koitern';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Koten_Gars', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koten_Gars';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Kulot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kulot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Lia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'MCLR', re.name
 FROM regular_expressions re
 WHERE re.name = 'MCLR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'mottoj', re.name
 FROM regular_expressions re
 WHERE re.name = 'mottoj';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'NH', re.name
 FROM regular_expressions re
 WHERE re.name = 'NH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'NTRM', re.name
 FROM regular_expressions re
 WHERE re.name = 'NTRM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Orphan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Orphan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'RMX', re.name
 FROM regular_expressions re
 WHERE re.name = 'RMX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SallySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'SallySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Scriptum', re.name
 FROM regular_expressions re
 WHERE re.name = 'Scriptum';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'ShadyCrab', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShadyCrab';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SNSbu', re.name
 FROM regular_expressions re
 WHERE re.name = 'SNSbu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'SOLA', re.name
 FROM regular_expressions re
 WHERE re.name = 'SOLA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'THORA', re.name
 FROM regular_expressions re
 WHERE re.name = 'THORA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'UWU', re.name
 FROM regular_expressions re
 WHERE re.name = 'UWU';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'xPearse', re.name
 FROM regular_expressions re
 WHERE re.name = 'xPearse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'Headpatter', re.name
 FROM regular_expressions re
 WHERE re.name = 'Headpatter';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'BluDragon', re.name
 FROM regular_expressions re
 WHERE re.name = 'BluDragon';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'D4C', re.name
 FROM regular_expressions re
 WHERE re.name = 'D4C';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'E.N.D', re.name
 FROM regular_expressions re
 WHERE re.name = 'E.N.D';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'PMR', re.name
 FROM regular_expressions re
 WHERE re.name = 'PMR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'Raizel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raizel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'REVO', re.name
 FROM regular_expressions re
 WHERE re.name = 'REVO';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'SRLS', re.name
 FROM regular_expressions re
 WHERE re.name = 'SRLS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'TTGA', re.name
 FROM regular_expressions re
 WHERE re.name = 'TTGA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'VULCAN', re.name
 FROM regular_expressions re
 WHERE re.name = 'VULCAN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 05 (Remuxes)', 'FraMeSToR', re.name
 FROM regular_expressions re
 WHERE re.name = 'FraMeSToR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Afro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Afro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Akai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Akai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Almighty', re.name
 FROM regular_expressions re
 WHERE re.name = 'Almighty';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'ANE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Asenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'BlurayDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlurayDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Bunny-Apocalypse', re.name
 FROM regular_expressions re
 WHERE re.name = 'Bunny-Apocalypse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'CH', re.name
 FROM regular_expressions re
 WHERE re.name = 'CH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'EJF', re.name
 FROM regular_expressions re
 WHERE re.name = 'EJF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Exiled-Destiny', re.name
 FROM regular_expressions re
 WHERE re.name = 'Exiled-Destiny';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'FFF', re.name
 FROM regular_expressions re
 WHERE re.name = 'FFF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Final8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Final8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'GS', re.name
 FROM regular_expressions re
 WHERE re.name = 'GS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Harunatsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Harunatsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Impatience', re.name
 FROM regular_expressions re
 WHERE re.name = 'Impatience';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Inka-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Inka-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Judgement', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judgement';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Kantai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kantai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'LCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'LCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Licca', re.name
 FROM regular_expressions re
 WHERE re.name = 'Licca';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Nii-sama', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nii-sama';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'niizk', re.name
 FROM regular_expressions re
 WHERE re.name = 'niizk';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Nishi-Taku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nishi-Taku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'OnDeed', re.name
 FROM regular_expressions re
 WHERE re.name = 'OnDeed';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'orz', re.name
 FROM regular_expressions re
 WHERE re.name = 'orz';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'PAS', re.name
 FROM regular_expressions re
 WHERE re.name = 'PAS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'peachflavored', re.name
 FROM regular_expressions re
 WHERE re.name = 'peachflavored';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Saizen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Saizen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SCP-2223', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCP-2223';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SHiN-gx', re.name
 FROM regular_expressions re
 WHERE re.name = 'SHiN-gx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'SmugCat', re.name
 FROM regular_expressions re
 WHERE re.name = 'SmugCat';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Soldado', re.name
 FROM regular_expressions re
 WHERE re.name = 'Soldado';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Sushi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Sushi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Vivid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vivid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Watashi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Watashi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Yabai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yabai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 06 (FanSubs)', 'Zurako', re.name
 FROM regular_expressions re
 WHERE re.name = 'Zurako';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'A-L', re.name
 FROM regular_expressions re
 WHERE re.name = 'A-L';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'ANiHLS', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANiHLS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'CBM', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'DHD', re.name
 FROM regular_expressions re
 WHERE re.name = 'DHD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'DragsterPS', re.name
 FROM regular_expressions re
 WHERE re.name = 'DragsterPS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'HAiKU', re.name
 FROM regular_expressions re
 WHERE re.name = 'HAiKU';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'Hark0N', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hark0N';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'iAHD', re.name
 FROM regular_expressions re
 WHERE re.name = 'iAHD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'inid4c', re.name
 FROM regular_expressions re
 WHERE re.name = 'inid4c';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'KiyoshiStar', re.name
 FROM regular_expressions re
 WHERE re.name = 'KiyoshiStar';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'MCR', re.name
 FROM regular_expressions re
 WHERE re.name = 'MCR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'NPC', re.name
 FROM regular_expressions re
 WHERE re.name = 'NPC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'RedBlade', re.name
 FROM regular_expressions re
 WHERE re.name = 'RedBlade';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'RH', re.name
 FROM regular_expressions re
 WHERE re.name = 'RH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'SEV', re.name
 FROM regular_expressions re
 WHERE re.name = 'SEV';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'STRiFE', re.name
 FROM regular_expressions re
 WHERE re.name = 'STRiFE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'TENEIGHTY', re.name
 FROM regular_expressions re
 WHERE re.name = 'TENEIGHTY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 07 (P2P-Scene)', 'WaLMaRT', re.name
 FROM regular_expressions re
 WHERE re.name = 'WaLMaRT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'AkihitoSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'AkihitoSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Arukoru', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arukoru';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'EDGE', re.name
 FROM regular_expressions re
 WHERE re.name = 'EDGE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'EMBER', re.name
 FROM regular_expressions re
 WHERE re.name = 'EMBER';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'GHOST', re.name
 FROM regular_expressions re
 WHERE re.name = 'GHOST';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Judas', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'naiyas', re.name
 FROM regular_expressions re
 WHERE re.name = 'naiyas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Nep_Blanc', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nep_Blanc';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'Prof', re.name
 FROM regular_expressions re
 WHERE re.name = 'Prof';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'ShirÏƒ', re.name
 FROM regular_expressions re
 WHERE re.name = 'ShirÏƒ';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 08 (Mini Encodes)', 'YURASAKA', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURASAKA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'OZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'OZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 1', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Drag', re.name
 FROM regular_expressions re
 WHERE re.name = 'Drag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'hydes', re.name
 FROM regular_expressions re
 WHERE re.name = 'hydes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Lulu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lulu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'pog42', re.name
 FROM regular_expressions re
 WHERE re.name = 'pog42';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'UDF', re.name
 FROM regular_expressions re
 WHERE re.name = 'UDF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'YURI', re.name
 FROM regular_expressions re
 WHERE re.name = 'YURI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 2', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'CBT', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBT';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'CTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'CTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Dekinai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dekinai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'EXP', re.name
 FROM regular_expressions re
 WHERE re.name = 'EXP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Flugel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Flugel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Headpatter', re.name
 FROM regular_expressions re
 WHERE re.name = 'Headpatter';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Holomux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Holomux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'IK', re.name
 FROM regular_expressions re
 WHERE re.name = 'IK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Kametsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kametsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'KH', re.name
 FROM regular_expressions re
 WHERE re.name = 'KH';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'kuchikirukia', re.name
 FROM regular_expressions re
 WHERE re.name = 'kuchikirukia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Mysteria', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mysteria';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Pookie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pookie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Quetzal', re.name
 FROM regular_expressions re
 WHERE re.name = 'Quetzal';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Rasetsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rasetsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'Senjou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Senjou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 3', 'WBDP', re.name
 FROM regular_expressions re
 WHERE re.name = 'WBDP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'AOmundson', re.name
 FROM regular_expressions re
 WHERE re.name = 'AOmundson';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Cait-Sidhe', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cait-Sidhe';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'CoalGirls', re.name
 FROM regular_expressions re
 WHERE re.name = 'CoalGirls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'deanzel', re.name
 FROM regular_expressions re
 WHERE re.name = 'deanzel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'hchcsen', re.name
 FROM regular_expressions re
 WHERE re.name = 'hchcsen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Iznjie Biznjie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Iznjie Biznjie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'kBaraka', re.name
 FROM regular_expressions re
 WHERE re.name = 'kBaraka';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'kmplx', re.name
 FROM regular_expressions re
 WHERE re.name = 'kmplx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Koten_Gars', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koten_Gars';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'mottoj', re.name
 FROM regular_expressions re
 WHERE re.name = 'mottoj';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Orphan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Orphan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'SallySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'SallySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'THORA', re.name
 FROM regular_expressions re
 WHERE re.name = 'THORA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 4', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Not Remux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not Remux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Almighty', re.name
 FROM regular_expressions re
 WHERE re.name = 'Almighty';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'ANE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ANE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'BlurayDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlurayDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'FFF', re.name
 FROM regular_expressions re
 WHERE re.name = 'FFF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Final8', re.name
 FROM regular_expressions re
 WHERE re.name = 'Final8';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Raizel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raizel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Saizen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Saizen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Bluray Tier 5', 'Zurako', re.name
 FROM regular_expressions re
 WHERE re.name = 'Zurako';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', '$tore-Chill', re.name
 FROM regular_expressions re
 WHERE re.name = '$tore-Chill';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', '0neshot', re.name
 FROM regular_expressions re
 WHERE re.name = '0neshot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'A-Destiny', re.name
 FROM regular_expressions re
 WHERE re.name = 'A-Destiny';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AceAres', re.name
 FROM regular_expressions re
 WHERE re.name = 'AceAres';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AhmadDev', re.name
 FROM regular_expressions re
 WHERE re.name = 'AhmadDev';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Chap', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Chap';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Land', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Land';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anime Time', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anime Time';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeDynastyEN', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeDynastyEN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeKuro', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeKuro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeRG', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeRG';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Animesubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Animesubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AnimeTR', re.name
 FROM regular_expressions re
 WHERE re.name = 'AnimeTR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Anitsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Anitsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AniVoid', re.name
 FROM regular_expressions re
 WHERE re.name = 'AniVoid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ArataEnc', re.name
 FROM regular_expressions re
 WHERE re.name = 'ArataEnc';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'AREY', re.name
 FROM regular_expressions re
 WHERE re.name = 'AREY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Ari', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ari';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'BJX', re.name
 FROM regular_expressions re
 WHERE re.name = 'BJX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'BlackLuster', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlackLuster';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'bonkai77', re.name
 FROM regular_expressions re
 WHERE re.name = 'bonkai77';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CameEsp', re.name
 FROM regular_expressions re
 WHERE re.name = 'CameEsp';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cat66', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cat66';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'CBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cerberus', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cerberus';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Cleo', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cleo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'CuaP', re.name
 FROM regular_expressions re
 WHERE re.name = 'CuaP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DaddySubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'DaddySubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DARKFLiX', re.name
 FROM regular_expressions re
 WHERE re.name = 'DARKFLiX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DBArabic', re.name
 FROM regular_expressions re
 WHERE re.name = 'DBArabic';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Deadmau- RAWS', re.name
 FROM regular_expressions re
 WHERE re.name = 'Deadmau- RAWS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DKB', re.name
 FROM regular_expressions re
 WHERE re.name = 'DKB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DP', re.name
 FROM regular_expressions re
 WHERE re.name = 'DP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'DsunS', re.name
 FROM regular_expressions re
 WHERE re.name = 'DsunS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Emmid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Emmid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ExREN', re.name
 FROM regular_expressions re
 WHERE re.name = 'ExREN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'FAV', re.name
 FROM regular_expressions re
 WHERE re.name = 'FAV';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Fish', re.name
 FROM regular_expressions re
 WHERE re.name = 'Fish';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'FunArts', re.name
 FROM regular_expressions re
 WHERE re.name = 'FunArts';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'GERMini', re.name
 FROM regular_expressions re
 WHERE re.name = 'GERMini';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hakata Ramen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hakata Ramen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hall_of_C', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hall_of_C';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hatsuyuki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hatsuyuki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HAV1T', re.name
 FROM regular_expressions re
 WHERE re.name = 'HAV1T';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HENiL', re.name
 FROM regular_expressions re
 WHERE re.name = 'HENiL';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Hitoku', re.name
 FROM regular_expressions re
 WHERE re.name = 'Hitoku';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HollowRoxas', re.name
 FROM regular_expressions re
 WHERE re.name = 'HollowRoxas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'HR', re.name
 FROM regular_expressions re
 WHERE re.name = 'HR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ICEBLUE', re.name
 FROM regular_expressions re
 WHERE re.name = 'ICEBLUE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'iPUNISHER', re.name
 FROM regular_expressions re
 WHERE re.name = 'iPUNISHER';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'JacobSwaggedUp', re.name
 FROM regular_expressions re
 WHERE re.name = 'JacobSwaggedUp';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Johnny-englishsubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Johnny-englishsubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kallango', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kallango';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kanjouteki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kanjouteki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KEKMASTERS', re.name
 FROM regular_expressions re
 WHERE re.name = 'KEKMASTERS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Kirion', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kirion';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KQRM', re.name
 FROM regular_expressions re
 WHERE re.name = 'KQRM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'KRP', re.name
 FROM regular_expressions re
 WHERE re.name = 'KRP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'LoliHouse', re.name
 FROM regular_expressions re
 WHERE re.name = 'LoliHouse';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'M@nI', re.name
 FROM regular_expressions re
 WHERE re.name = 'M@nI';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'mal lu zen', re.name
 FROM regular_expressions re
 WHERE re.name = 'mal lu zen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Man.K', re.name
 FROM regular_expressions re
 WHERE re.name = 'Man.K';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Maximus', re.name
 FROM regular_expressions re
 WHERE re.name = 'Maximus';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'mdcx', re.name
 FROM regular_expressions re
 WHERE re.name = 'mdcx';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Metaljerk', re.name
 FROM regular_expressions re
 WHERE re.name = 'Metaljerk';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MGD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MGD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniFreeza', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniFreeza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniMTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniMTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MinisCuba', re.name
 FROM regular_expressions re
 WHERE re.name = 'MinisCuba';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'MiniTheatre', re.name
 FROM regular_expressions re
 WHERE re.name = 'MiniTheatre';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Mites', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mites';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Modders Bay', re.name
 FROM regular_expressions re
 WHERE re.name = 'Modders Bay';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Mr. Deadpool', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mr. Deadpool';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NemDiggers', re.name
 FROM regular_expressions re
 WHERE re.name = 'NemDiggers';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'neoHEVC', re.name
 FROM regular_expressions re
 WHERE re.name = 'neoHEVC';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Nokou', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nokou';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NoobSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'NoobSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'NS', re.name
 FROM regular_expressions re
 WHERE re.name = 'NS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Nyanpasu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Nyanpasu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'OldCastle', re.name
 FROM regular_expressions re
 WHERE re.name = 'OldCastle';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pantsu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pantsu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pao', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pao';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'phazer11', re.name
 FROM regular_expressions re
 WHERE re.name = 'phazer11';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Pixel', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pixel';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Plex Friendly', re.name
 FROM regular_expressions re
 WHERE re.name = 'Plex Friendly';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'PnPSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'PnPSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Polarwindz', re.name
 FROM regular_expressions re
 WHERE re.name = 'Polarwindz';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Project-gxs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Project-gxs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'PuyaSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'PuyaSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'QaS', re.name
 FROM regular_expressions re
 WHERE re.name = 'QaS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'QCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'QCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rando235', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rando235';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Ranger', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ranger';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rapta', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rapta';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Raze', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raze';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Reaktor', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reaktor';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'RightShiftBy2', re.name
 FROM regular_expressions re
 WHERE re.name = 'RightShiftBy2';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Rip Time', re.name
 FROM regular_expressions re
 WHERE re.name = 'Rip Time';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SAD', re.name
 FROM regular_expressions re
 WHERE re.name = 'SAD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Salieri', re.name
 FROM regular_expressions re
 WHERE re.name = 'Salieri';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Samir755', re.name
 FROM regular_expressions re
 WHERE re.name = 'Samir755';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SanKyuu', re.name
 FROM regular_expressions re
 WHERE re.name = 'SanKyuu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SEiN', re.name
 FROM regular_expressions re
 WHERE re.name = 'SEiN';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'sekkusu&ok', re.name
 FROM regular_expressions re
 WHERE re.name = 'sekkusu&ok';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SHFS', re.name
 FROM regular_expressions re
 WHERE re.name = 'SHFS';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'shincaps', re.name
 FROM regular_expressions re
 WHERE re.name = 'shincaps';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SLAX', re.name
 FROM regular_expressions re
 WHERE re.name = 'SLAX';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Sokudo', re.name
 FROM regular_expressions re
 WHERE re.name = 'Sokudo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SRW', re.name
 FROM regular_expressions re
 WHERE re.name = 'SRW';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'SSA', re.name
 FROM regular_expressions re
 WHERE re.name = 'SSA';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'StrayGods', re.name
 FROM regular_expressions re
 WHERE re.name = 'StrayGods';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Suki Desu', re.name
 FROM regular_expressions re
 WHERE re.name = 'Suki Desu';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TeamTurquoize', re.name
 FROM regular_expressions re
 WHERE re.name = 'TeamTurquoize';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Tenrai Sensei', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tenrai Sensei';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TnF', re.name
 FROM regular_expressions re
 WHERE re.name = 'TnF';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'TOPKEK', re.name
 FROM regular_expressions re
 WHERE re.name = 'TOPKEK';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Trix', re.name
 FROM regular_expressions re
 WHERE re.name = 'Trix';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'U3-Web', re.name
 FROM regular_expressions re
 WHERE re.name = 'U3-Web';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'UNBIASED', re.name
 FROM regular_expressions re
 WHERE re.name = 'UNBIASED';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'uP', re.name
 FROM regular_expressions re
 WHERE re.name = 'uP';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'USD', re.name
 FROM regular_expressions re
 WHERE re.name = 'USD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Valenciano', re.name
 FROM regular_expressions re
 WHERE re.name = 'Valenciano';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'VipapkStudios', re.name
 FROM regular_expressions re
 WHERE re.name = 'VipapkStudios';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Wardevil', re.name
 FROM regular_expressions re
 WHERE re.name = 'Wardevil';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'WtF Anime', re.name
 FROM regular_expressions re
 WHERE re.name = 'WtF Anime';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'xiao-av1', re.name
 FROM regular_expressions re
 WHERE re.name = 'xiao-av1';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Yabai_Desu_NeRandomRemux', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yabai_Desu_NeRandomRemux';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'YakuboEncodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'YakuboEncodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'youshikibi', re.name
 FROM regular_expressions re
 WHERE re.name = 'youshikibi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'YuiSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'YuiSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'Yun', re.name
 FROM regular_expressions re
 WHERE re.name = 'Yun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'zza', re.name
 FROM regular_expressions re
 WHERE re.name = 'zza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', 'ToonsHub', re.name
 FROM regular_expressions re
 WHERE re.name = 'ToonsHub';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'AsukaRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'AsukaRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Beatrice-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Beatrice-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Daddy-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Daddy-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Fumi-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Fumi-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'IrizaRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'IrizaRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Kawaiika-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kawaiika-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'km', re.name
 FROM regular_expressions re
 WHERE re.name = 'km';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Koi-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Koi-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Lilith-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lilith-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'LowPower-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'LowPower-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Moozzi2', re.name
 FROM regular_expressions re
 WHERE re.name = 'Moozzi2';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'NanakoRaws', re.name
 FROM regular_expressions re
 WHERE re.name = 'NanakoRaws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'NC-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'NC-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'neko-raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'neko-raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'New-raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'New-raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Ohys-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Ohys-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Pandoratv-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pandoratv-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Raws-Maji', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raws-Maji';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'ReinForce', re.name
 FROM regular_expressions re
 WHERE re.name = 'ReinForce';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Scryous-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Scryous-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Seicher-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Seicher-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'Shiniori-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Shiniori-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Arg0', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arg0';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Baws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Baws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'LostYears', re.name
 FROM regular_expressions re
 WHERE re.name = 'LostYears';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'LYS1TH3A', re.name
 FROM regular_expressions re
 WHERE re.name = 'LYS1TH3A';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'McBalls', re.name
 FROM regular_expressions re
 WHERE re.name = 'McBalls';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'SCY', re.name
 FROM regular_expressions re
 WHERE re.name = 'SCY';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Setsugen', re.name
 FROM regular_expressions re
 WHERE re.name = 'Setsugen';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'smol', re.name
 FROM regular_expressions re
 WHERE re.name = 'smol';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'SoM', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Z4ST1N', re.name
 FROM regular_expressions re
 WHERE re.name = 'Z4ST1N';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'ZeroBuild', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZeroBuild';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 01 (Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Asakura', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asakura';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Cyan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Cyan';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Dae', re.name
 FROM regular_expressions re
 WHERE re.name = 'Dae';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Foxtrot', re.name
 FROM regular_expressions re
 WHERE re.name = 'Foxtrot';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Gao', re.name
 FROM regular_expressions re
 WHERE re.name = 'Gao';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'GSK_kun', re.name
 FROM regular_expressions re
 WHERE re.name = 'GSK_kun';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Half-Baked', re.name
 FROM regular_expressions re
 WHERE re.name = 'Half-Baked';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'HatSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HatSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'MALD', re.name
 FROM regular_expressions re
 WHERE re.name = 'MALD';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'MTBB', re.name
 FROM regular_expressions re
 WHERE re.name = 'MTBB';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Not-Vodes', re.name
 FROM regular_expressions re
 WHERE re.name = 'Not-Vodes';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Okay-Subs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Okay-Subs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Pizza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Pizza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Reza', re.name
 FROM regular_expressions re
 WHERE re.name = 'Reza';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Slyfox', re.name
 FROM regular_expressions re
 WHERE re.name = 'Slyfox';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'SoLCE', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoLCE';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 02 (Top FanSubs)', 'Tenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'SubsPlus+', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlus+';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'ZR', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZR';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 03 (Official Subs)', 'Erai-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Erai-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'BlueLobster', re.name
 FROM regular_expressions re
 WHERE re.name = 'BlueLobster';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'GST', re.name
 FROM regular_expressions re
 WHERE re.name = 'GST';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'HorribleRips', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleRips';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'HorribleSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'KAN3D2M', re.name
 FROM regular_expressions re
 WHERE re.name = 'KAN3D2M';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'KiyoshiStar', re.name
 FROM regular_expressions re
 WHERE re.name = 'KiyoshiStar';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'Lia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Lia';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'NanDesuKa', re.name
 FROM regular_expressions re
 WHERE re.name = 'NanDesuKa';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'URANIME', re.name
 FROM regular_expressions re
 WHERE re.name = 'URANIME';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'VARYG', re.name
 FROM regular_expressions re
 WHERE re.name = 'VARYG';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'ZigZag', re.name
 FROM regular_expressions re
 WHERE re.name = 'ZigZag';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'SubsPlease', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsPlease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'Judas', re.name
 FROM regular_expressions re
 WHERE re.name = 'Judas';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 04 (Official Subs)', 'ASW', re.name
 FROM regular_expressions re
 WHERE re.name = 'ASW';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', '9volt', re.name
 FROM regular_expressions re
 WHERE re.name = '9volt';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'GJM', re.name
 FROM regular_expressions re
 WHERE re.name = 'GJM';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Kaleido', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kaleido';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Kantai', re.name
 FROM regular_expressions re
 WHERE re.name = 'Kantai';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'SobsPlease', re.name
 FROM regular_expressions re
 WHERE re.name = 'SobsPlease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 05 (FanSubs)', 'Some-Stuffs', re.name
 FROM regular_expressions re
 WHERE re.name = 'Some-Stuffs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Asenshi', re.name
 FROM regular_expressions re
 WHERE re.name = 'Asenshi';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Chihiro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Chihiro';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Commie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Commie';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'DameDesuYo', re.name
 FROM regular_expressions re
 WHERE re.name = 'DameDesuYo';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Doki', re.name
 FROM regular_expressions re
 WHERE re.name = 'Doki';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Web Tier 06 (FanSubs)', 'Tsundere', re.name
 FROM regular_expressions re
 WHERE re.name = 'Tsundere';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 1', 'Subsplease', re.name
 FROM regular_expressions re
 WHERE re.name = 'Subsplease';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'Erai-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Erai-Raws';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'HorribleSubs', re.name
 FROM regular_expressions re
 WHERE re.name = 'HorribleSubs';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'Subsplus+', re.name
 FROM regular_expressions re
 WHERE re.name = 'Subsplus+';
-INSERT INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime WEB-DL Tier 2', 'VARYG', re.name
 FROM regular_expressions re
 WHERE re.name = 'VARYG';
+
