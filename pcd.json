@@ -1,14 +1,28 @@
 {
-  "name": "profilarr-anime",
-  "version": "1.0.0",
-  "description": "Custom anime quality profiles and custom formats for Sonarr",
-  "arr_types": ["sonarr"],
+  "name": "Dictionarry Database + Anime (SeaDex)",
+  "version": "2.0.0",
+  "description": "Official Dictionarry Database with custom anime profiles and formats",
+  "arr_types": [
+    "radarr",
+    "sonarr"
+  ],
   "dependencies": {
     "https://github.com/Dictionarry-Hub/schema": "1.1.0"
   },
-  "authors": [{"name": "sgriosadair"}],
+  "authors": [
+    {
+      "name": "Dictionarry Team"
+    },
+    {
+      "name": "sgriosadair"
+    }
+  ],
+  "license": "MIT",
   "repository": "https://github.com/sgriosadair/profilarr-anime",
-  "tags": ["anime", "sonarr"],
+  "links": {
+    "homepage": "https://dictionarry.dev",
+    "issues": "https://github.com/sgriosadair/profilarr-anime/issues"
+  },
   "profilarr": {
     "minimum_version": "2.0.0"
   }
