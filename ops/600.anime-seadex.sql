@@ -10,455 +10,455 @@
 
 -- Tags
 
-INSERT INTO tags (name) VALUES ('1080p');
-INSERT INTO tags (name) VALUES ('Anime');
-INSERT INTO tags (name) VALUES ('Bluray');
-INSERT INTO tags (name) VALUES ('Codec');
-INSERT INTO tags (name) VALUES ('Efficient Focused');
-INSERT INTO tags (name) VALUES ('h264');
-INSERT INTO tags (name) VALUES ('h265');
-INSERT INTO tags (name) VALUES ('HDTV');
-INSERT INTO tags (name) VALUES ('HEVC');
-INSERT INTO tags (name) VALUES ('Lossless');
-INSERT INTO tags (name) VALUES ('Quality Focused');
-INSERT INTO tags (name) VALUES ('Release Group');
-INSERT INTO tags (name) VALUES ('Release Group Tier');
-INSERT INTO tags (name) VALUES ('Remux');
-INSERT INTO tags (name) VALUES ('x265');
+INSERT OR IGNORE INTO tags (name) VALUES ('1080p');
+INSERT OR IGNORE INTO tags (name) VALUES ('Anime');
+INSERT OR IGNORE INTO tags (name) VALUES ('Bluray');
+INSERT OR IGNORE INTO tags (name) VALUES ('Codec');
+INSERT OR IGNORE INTO tags (name) VALUES ('Efficient Focused');
+INSERT OR IGNORE INTO tags (name) VALUES ('h264');
+INSERT OR IGNORE INTO tags (name) VALUES ('h265');
+INSERT OR IGNORE INTO tags (name) VALUES ('HDTV');
+INSERT OR IGNORE INTO tags (name) VALUES ('HEVC');
+INSERT OR IGNORE INTO tags (name) VALUES ('Lossless');
+INSERT OR IGNORE INTO tags (name) VALUES ('Quality Focused');
+INSERT OR IGNORE INTO tags (name) VALUES ('Release Group');
+INSERT OR IGNORE INTO tags (name) VALUES ('Release Group Tier');
+INSERT OR IGNORE INTO tags (name) VALUES ('Remux');
+INSERT OR IGNORE INTO tags (name) VALUES ('x265');
 
 -- Languages
 -- (Provided by 1.languages.sql - no inserts needed)
 
 -- Regular Expressions
 
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('$tore-Chill', '\b(\$tore-Chill)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('0neshot', '\b(0neshot)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('9volt', '(?<=^|[\s.\[\]-])(?:\[9volt\]|-?9volt)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('A-Destiny', '\b(A-Destiny)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('A-L', '\b(A-L)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AC', '(?<=^|[\s.-])AC\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AceAres', '\b(AceAres)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Aergia', '\[Aergia\]|-Aergia(?!-raws)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Afro', '\[Afro\]|-Afro\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AhmadDev', '\b(AhmadDev)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Akai', '\[Akai\]|-Akai\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AkihitoSubs', '\b(AkihitoSubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Almighty', '(?<=^|[\s.-])Almighty\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Alt', '\[Alt\]|-Alt\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ANE', '(?<=^|[\s.-])ANE\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ANiHLS', '\b(ANiHLS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Anime Chap', '\b(Anime[ .-]?Chap)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Anime Land', '\b(Anime[ .-]?Land)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Anime Time', '\b(Anime[ .-]?Time)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Anime-Heart', '\b(Anime[ .-]?Heart)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AnimeDynastyEN', '\b(AnimeDynastyEN)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AnimeKuro', '\b(AnimeKuro)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AnimeRG', '\b(AnimeRG)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Animesubs', '\b(Animesubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AnimeTR', '\b(AnimeTR)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Anitsu', '\b(Anitsu)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AniVoid', '\b(AniVoid)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AOmundson', '(?<=^|[\s.-])AOmundson\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ArataEnc', '\b(ArataEnc)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ARC', '\[ARC\]|-ARC\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AREY', '\b(AREY)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Arg0', '(?<=^|[\s.\[\]-])(?:\[Arg0\]|-?Arg0)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Ari', '\[Ari\]|-Ari\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Arid', '(?<=^|[\s.-])Arid\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('aro', '\b(aro)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Arukoru', '\b(Arukoru)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Asakura', '(?<=^|[\s.\[\]-])(?:\[Asakura\]|-?Asakura)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ASC', '\b(ASC)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Asenshi', '\b(Asenshi)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ASO', '\b(ASO)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AssMix', '\b(AssMix)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('AsukaRaws', 'Asuka[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ASW', '(?<=^|[\s.\[\]-])(?:\[ASW\]|-?ASW)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Ayashii', '\[Ayashii\]|-Ayashii\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('B00BA', '(?<=^|[\s.\[\]-])(?:\[B00BA\]|-?B00BA)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Baws', '\b(Baws)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Beatrice-Raws', 'Beatrice[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BJX', '\b(BJX)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BKC', '\b(BKC)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BlackLuster', '\b(BlackLuster)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BluDragon', '\b(BluDragon)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BlueLobster', '\b(BlueLobster)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('BlurayDesuYo', '(?<=^|[\s.-])BlurayDesuYo\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Bolshevik', '\[Bolshevik\]|-Bolshevik\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('bonkai77', '\b(bonkai77)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Brrrrrrr', '\b(Brrrrrrr)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Bulldog', '\[Bulldog\]|-Bulldog\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Bunny-Apocalypse', '(?<=^|[\s.-])Bunny-Apocalypse\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cait-Sidhe', '(?<=^|[\s.-])Cait-Sidhe\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CameEsp', '\b(CameEsp)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cat66', '\b(Cat66)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CBB', '\b(CBB)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CBM', '\b(CBM)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CBT', '(?<=^|[\s.-])CBT\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cerberus', '\[Cerberus\]|-Cerberus\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CH', '\[CH\]|-CH\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Chihiro', '(?<=^|[\s.-])Chihiro\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Chimera', '\[Chimera\]|-Chimera\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Chotab', '(?<=^|[\s.-])Chotab\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cleo', '\[Cleo\]|-Cleo', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CoalGirls', '(?<=^|[\s.-])CoalGirls\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Commie', '(?<=^|[\s.-])Commie\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Crow', '\[Crow\]|-Crow\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CRUCiBLE', '(?<=^|[\s.\[\]-])(?:\[CRUCiBLE\]|-?CRUCiBLE)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CsS', '\b(CsS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CTR', '(?<=^|[\s.-])CTR\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CuaP', '\b(CuaP)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CUNNY', '\b(CUNNY)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cunnysseur', '\b(Cunnysseur)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Cyan', '\[Cyan\]|-Cyan\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('CyC', '\b(CyC)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('D-Z0N3', '(?<=^|[\s.-])D-Z0N3\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('D3', '\b(D3)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('D4C', '\b(D4C)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Daddy-Raws', 'Daddy[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DaddySubs', '\[Daddy(Subs)?\]|-Daddy(Subs)?\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Dae', '\b(Dae)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DameDesuYo', '\b(DameDesuYo)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DARKFLiX', '(?<=^|[\s.-])DARKFLiX\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Datte13', '\b(Datte13)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Davinci', '\[Davinci\]|-Davinci\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DBArabic', '\b(DBArabic)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Deadmau- RAWS', '\b(Deadmau[ .-]?[ .-]?RAWS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('deanzel', '(?<=^|[\s.-])deanzel\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Dekinai', '(?<=^|[\s.-])Dekinai\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DemiHuman', '\[DemiHuman\]|-DemiHuman\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DHD', '\b(DHD)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DKB', '(?i:\[DKB\]|-DKB\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Doki', '(?<=^|[\s.-])Doki\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DP', '\b(DP)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Drag', '(?<=^|[\s.-])Drag\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Dragon-Releases', '\b(Dragon-Releases)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DragsterPS', '\b(DragsterPS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('DsunS', '\b(DsunS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('E.N.D', '(?<=^|[\s.-])E.N.D\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('EDGE', '\[EDGE\]|-EDGE\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('EJF', '\b(EJF)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('EMBER', '(?i:\[EMBER\]|-EMBER\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Emmid', '\[Emmid\]|-Emmid\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Erai-Raws', '(?<=^|[\s.\[\]-])(?:\[Erai-Raws\]|-?Erai-Raws)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Exiled-Destiny', '(?<=^|[\s.-])Exiled-Destiny\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('EXP', '(?<=^|[\s.-])EXP\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ExREN', '\b(ExREN)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FAV', '\[FAV\]|-FAV\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FFF', '(?<=^|[\s.-])FFF\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Final8', '(?<=^|[\s.-])Final8\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Fish', '\b((Baked|Dead|Space)Fish)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FLE', '(?i:\[FLE\]|-FLE\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FLFL', '\b(FLFL)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Flugel', '(?<=^|[\s.-])Flugel\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Foxtrot', '\[Foxtrot\]|-Foxtrot\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FraMeSToR', '(?<=^|[\s.\[\]-])(?:\[FraMeSToR\]|-?FraMeSToR)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Fumi-Raws', 'Fumi[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('FunArts', '\b(FunArts)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Galator', '\b(Galator)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Gao', '\[Gao\]|-Gao\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GERMini', '\b(GERMini)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GHOST', '\[GHOST\]|-GHOST\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GHS', '\b(GHS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GJM', '\b(GJM)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GS', '\b(GS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GSK_kun', '\b(GSK[._-]kun)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('GST', '\b(GST)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HAiKU', '\b(HAiKU)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HaiveMind', '\b(HaiveMind)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Hakata Ramen', '\b(Hakata[ .-]?Ramen)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Half-Baked', '\b(Half-Baked)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Hall_of_C', '\b(Hall_of_C)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Hark0N', '\b(Hark0N)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Harunatsu', '\[Harunatsu\]|-Harunatsu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HatSubs', '\b(HatSubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Hatsuyuki', '\[Hatsuyuki\]|-Hatsuyuki\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HAV1T', '\b(HAV1T)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('hchcsen', '(?i:\[hchcsen\]|-hchcsen\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Headpatter', '(?<=^|[\s.-])Headpatter\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HENiL', '\b(HENiL)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Hitoku', '\[Hitoku\]|-Hitoku\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HollowRoxas', '\b(HollowRoxas)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Holomux', '(?<=^|[\s.-])Holomux\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HorribleRips', '\b(HorribleRips)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HorribleSubs', '(?i:\[HorribleSubs\]|-HorribleSubs\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('HR', '\[HR\]|-HR\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('hydes', '(?<=^|[\s.-])hydes\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('iAHD', '\b(iAHD)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ICEBLUE', '\b(ICEBLUE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('IK', '(?<=^|[\s.-])IK\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('iKaos', '\b(iKaos)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Impatience', '\[Impatience\]|-Impatience\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('inid4c', '\b(inid4c)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Inka-Subs', '\b(Inka-Subs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('iPUNISHER', '\b(iPUNISHER)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('IrizaRaws', 'Iriza[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Iznjie Biznjie', '(?<=^|[\s.-])Iznjie Biznjie\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('JacobSwaggedUp', '\b(JacobSwaggedUp)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Johnny-englishsubs', '\b(Johnny-englishsubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Judas', '(?<=^|[\s.\[\]-])(?:\[Judas\]|-?Judas)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Judgement', '\[Judgment\]|-Judgment\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('JySzE', '\b(JySzE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kaizoku', '\b(AnimeKaizoku)\b|\[Kaizoku\]|-Kaizoku\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kaleido', '(?<=^|[\s.-])Kaleido\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kallango', '\[Kallango\]|-Kallango\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kametsu', '(?<=^|[\s.-])Kametsu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KAN3D2M', '(?<=^|[\s.-])KAN3D2M\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kanjouteki', '\b(Kanjouteki)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kantai', '\[Kantai\]|-Kantai\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('karios', '\b(karios)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kawaiika-Raws', 'Kawaiika[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('kBaraka', '(?<=^|[\s.-])kBaraka\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KEKMASTERS', '\b(KEKMASTERS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KH', '(?<=^|[\s.-])KH\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kirion', '\b(Kirion)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KiyoshiStar', '\b(KS|KiyoshiStar)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('km', '\[km\]|-km\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('kmplx', '(?<=^|[\s.-])kmplx\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Koi-Raws', 'Koi[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Koitern', '\b(Koitern)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Koten_Gars', '(?<=^|[\s.-])Koten_Gars\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KQRM', '\b(KQRM)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('KRP', '\b(KRP)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('kuchikirukia', '(?<=^|[\s.-])kuchikirukia\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Kulot', '\b(Kulot)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LazyRemux', '(?i:\[LazyRemux\]|-LazyRemux\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LCE', '\b(LCE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Legion', '\[Legion\]|-Legion\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Lia', '\[Lia\]|-Lia\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Licca', '\b(Licca)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Lilith-Raws', 'Lilith[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LoliHouse', '\b(LoliHouse)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LostYears', '(?<=^|[\s.\[\]-])(?:\[LostYears\]|-?LostYears)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LowPower-Raws', 'LowPower[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Lulu', '(?<=^|[\s.-])Lulu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('LYS1TH3A', '(?<=^|[\s.\[\]-])(?:\[LYS1TH3A\]|-?LYS1TH3A)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('M@nI', '\b(M@nI)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('mal lu zen', '\b(mal[ .-]lu[ .-]zen)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MALD', '\b(MALD)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Man.K', '\b(Man\.K)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Matsya', '\b(Matsya)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Maximus', '\[Maximus\]|-Maximus\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MC', '\b(MC)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('McBalls', '\b(McBalls)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MCLR', '\b(MCLR)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MCR', '\b(MCR)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MD', '\[MD\]|-MD\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('mdcx', '\b(mdcx)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Metal', '\[Metal\]|-Metal\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Metaljerk', '\b(Metaljerk)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MGD', '\b(MGD)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MiniFreeza', '\b(MiniFreeza)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MiniMTBB', '\b(MiniMTBB)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MinisCuba', '\b(MinisCuba)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MiniTheatre', '\b(MiniTheatre)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Mites', '\b(Mites)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MK', '\b(MK)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Modders Bay', '\b(Modders[ .-]?Bay)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Moozzi2', '\b(Moozzi2)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('mottoj', '(?<=^|[\s.-])mottoj\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Moxie', '(?i:\[Moxie\]|-Moxie\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Mr. Deadpool', '\b(Mr\.Deadpool)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('MTBB', '(?<=^|[\s.\[\]-])(?:\[MTBB\]|-?MTBB)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Mysteria', '(?<=^|[\s.-])Mysteria\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('naiyas', '\[naiyas\]|-naiyas\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NAN0', '(?<=^|[\s.\[\]-])(?:\[NAN0\]|-?NAN0)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NanakoRaws', 'Nanako[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NanDesuKa', '\b(NanDesuKa)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NC-Raws', 'NC[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('neko-raws', 'neko[ ._-]?(raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NemDiggers', '\b(NemDiggers)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('neoHEVC', '\b(neoHEVC)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Nep_Blanc', '\b(Nep[ ._-]Blanc)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Netaro', '(?<=^|[\s.\[\]-])(?:\[Netaro\]|-?Netaro)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('New-raws', 'New[ ._-]?(raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NH', '(?<=^|[\s.-])NH\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Nii-sama', '\[Nii-sama\]|-Nii-sama\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('niizk', '\b(niizk)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Nishi-Taku', '\b(Nishi-Taku)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Nokou', '\b(Nokou)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NoobSubs', '\b(N[eo][wo]b[ ._-]?Subs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Not-Vodes', '(?i:\[Not-Vodes\]|-Not-Vodes\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Noyr', '\b(Noyr)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NPC', '\[NPC\]|-NPC\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NS', '\b(NS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NSDAB', '\b(NSDAB)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('NTRM', '\b(NTRM)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Nyanpasu', '\b(Nyanpasu)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Ohys-Raws', 'Ohys[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Okay-Subs', '(?<=^|[\s.-])(?i)\[Okay-Subs\]', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('OldCastle', '\b(OldCastle)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('OnDeed', '\b(OnDeed)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Orphan', '(?<=^|[\s.-])Orphan\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('orz', '\b(orz)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('OZR', '(?<=^|[\s.-])OZR\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pandoratv-Raws', 'Pandoratv[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pantsu', '\[Pantsu\]|-Pantsu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pao', '\[Pao\]|-Pao\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('PAS', '\b(PAS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('peachflavored', '\b(peachflavored)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('phazer11', '\b(phazer11)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pixel', '\[Pixel\]|-Pixel\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pizza', '\[Pizza\]|-Pizza\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Plex Friendly', '\b(Plex[ .-]?Friendly)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('PMR', '(?<=^|[\s.\[\]-])(?:\[PMR\]|-?PMR)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pn8', '\b(Pn8)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('PnPSubs', '\b(PnPSubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('pog42', '(?<=^|[\s.-])pog42\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Polarwindz', '\b(Polarwindz)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Pookie', '(?<=^|[\s.-])Pookie\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Prof', '\[Prof\]|-Prof\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Project-gxs', '\b(Project-gxs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('PuyaSubs', '\b(PuyaSubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('pyroneko', '\b(pyroneko)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('QaS', '\b(QAS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('QCE', '\b(QCE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Quetzal', '(?<=^|[\s.-])Quetzal\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('RAI', '\b(RAI)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Raizel', '(?<=^|[\s.-])Raizel\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Rando235', '\b(Rando235)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Ranger', '\[Ranger\]|-Ranger\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Rapta', '\[Rapta\]|-Rapta\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Rasetsu', '(?<=^|[\s.-])Rasetsu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Raws-Maji', '\b(Raws-Maji)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Raze', '\[Raze\]|-Raze\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Reaktor', '\b(Reaktor)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('RedBlade', '\b(RedBlade)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ReinForce', '\b(ReinForce)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Remux', 'Remux', 'A remux is a digital video file that maintains the exact quality of the original source (like a Blu-ray or DVD) by copying the video and audio streams without re-encoding them, essentially creating a perfect 1:1 copy. Think of it like carefully transferring the contents of a Blu-ray disc into a more convenient container file format (typically MKV), similar to pouring fine wine from its bottle into a decanter without changing the wine itself.');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('REVO', '\b(REVO)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Reza', '\b(Reza)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('RH', '\b(RH)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('RightShiftBy2', '\b(RightShiftBy2)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Rip Time', '\b(Rip[ .-]?Time)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('RMX', '\b(RMX)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SAD', '\[SAD\]|-SAD\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Saizen', '(?<=^|[\s.-])Saizen\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Salieri', '\b(Salieri)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SallySubs', '(?<=^|[\s.-])SallySubs\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('sam', '(?<=^|[\s.\[\]-])(?:\[sam\]|-?sam)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Samir755', '\b(Samir755)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SanKyuu', '\b(SanKyuu)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SCP-2223', '\b(SCP-2223)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Scriptum', '\b(Scriptum)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Scryous-Raws', 'Scryous[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SCY', '(?<=^|[\s.-])SCY\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Seicher-Raws', 'Seicher[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SEiN', '\[SEiN\]|-SEiN\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('sekkusu&ok', '\b(sekkusu&ok)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Senjou', '(?<=^|[\s.-])Senjou\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Setsugen', '\b(Setsugen)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SEV', '(?<=^|[\s.-])(SEV|D0ct0rLew|Kira)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ShadyCrab', '\b(ShadyCrab)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SHFS', '\b(SHFS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Shimatta', '\b(Shimatta)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SHiN-gx', '\b(SHiN-gx)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('shincaps', '\b(shincaps)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Shiniori-Raws', 'Shiniori[ ._-]?(Raws)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ShowY', '\b(ShowY)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SLAX', '\b(SLAX)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Slyfox', '\b(Slyfox)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Smoke', '\[Smoke\]|-Smoke\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('smol', '(?i:\[smol\]|-smol\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SmugCat', '\b(SmugCat)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SNSbu', '\b(SNSbu)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SobsPlease', '\b(SobsPlease)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Sokudo', '\[Sokudo\]|-Sokudo\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SOLA', '\[SOLA\]|-SOLA\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SoLCE', '\b(SoLCE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Soldado', '\[Soldado\]|-Soldado\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SoM', '\[SoM\]|-SoM\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Some-Stuffs', '\b(Some-Stuffs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Spirale', '\b(Spirale)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SRLS', '\b(SRLS)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SRW', '\b(SRW)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SSA', '\b(SSA)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('StrayGods', '\b(StrayGods)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('STRiFE', '\[STRiFE\]|-STRiFE\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SubsPlease', '(?<=^|[\s.\[\]-])(?:\[SubsPlease\]|-?SubsPlease)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('SubsPlus+', '(?<=^|[\s.-])SubsPlus+\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Suki Desu', '\[Suki[ .-]?Desu\]|-Suki[ .-]?Desu\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Sushi', '\[Sushi\]|-Sushi\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('TeamTurquoize', '\b(TeamTurquoize)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('TENEIGHTY', '\b(TENEIGHTY)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Tenrai Sensei', '\b(Tenrai[ .-]?Sensei)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Tenshi', '\[tenshi\]|-tenshi$', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Thighs', '\[Thighs\]|-Thighs\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('THORA', '(?<=^|[\s.-])THORA\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('TnF', '\b(TnF)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ToonsHub', '\b(ToonsHub)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('TOPKEK', '\b(TOPKEK)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Trix', '\[Trix\]|-Trix\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Tsundere', '(?<=^|[\s.-])Tsundere\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('TTGA', '(?i:\[TTGA\]|-TTGA\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('U3-Web', '\b(U3-Web)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('UDF', '(?<=^|[\s.-])UDF\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('UNBIASED', '\[UNBIASED\]|-UNBIASED\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('uP', '\[uP\]', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('URANIME', '\b(URANIME)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('USD', '\[USD\]|-USD\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('UWU', '\b(UWU)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Valenciano', '\b(Valenciano)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Vanilla', '\[Vanilla\]|-Vanilla\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('VARYG', '(?<=^|[\s.\[\]-])(?:\[VARYG\]|-?VARYG)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('VipapkStudios', '\b(VipapkStudios)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Vivid', '\[Vivid\]|-Vivid\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Vodes', '(?<=^|[\s.\[\]-])(?:\[Vodes\]|-?Vodes)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('VULCAN', '\b(VULCAN)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('WaLMaRT', '\b(WaLMaRT)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Wardevil', '\[Wardevil\]|-Wardevil\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Watashi', '\[Watashi\]|-Watashi\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('WBDP', '(?<=^|[\s.-])WBDP\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('WSE', '\b(WSE)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('WtF Anime', '\b(WtF[ ._-]?Anime)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('xiao-av1', '\b(xiao-av1)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('xPearse', '\b(xPearse)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Yabai', '\[Yabai\]|-Yabai\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Yabai_Desu_NeRandomRemux', '\b(Yabai_Desu_NeRandomRemux)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('YakuboEncodes', '\b(YakuboEncodes)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Yoghurt', '\b(Yoghurt)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('youshikibi', '\b(youshikibi)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('YuiSubs', '\b(YuiSubs)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Yuki', '(?<=^|[\s.-])Yuki\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Yun', '\[Yun\]|-Yun\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('YURASAKA', '\[YURASUKA\]|-YURASUKA\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('YURI', '(?i:\[YURI\]|-YURI\b)', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Z4ST1N', '\b(Z4ST1N)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ZeroBuild', '(?<=^|[\s.\[\]-])(?:\[ZeroBuild\]|-?ZeroBuild)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ZigZag', '(?<=^|[\s.\[\]-])(?:\[ZigZag\]|-?ZigZag)(?=$|[\s.\[\]-])', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ZOIO', '\b(ZOIO)\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('ZR', '(?<=^|[\s.-])ZR\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('Zurako', '(?<=^|[\s.-])Zurako\b', '');
-INSERT INTO regular_expressions (name, pattern, description) VALUES ('zza', '\[zza\]|-zza\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('$tore-Chill', '\b(\$tore-Chill)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('0neshot', '\b(0neshot)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('9volt', '(?<=^|[\s.\[\]-])(?:\[9volt\]|-?9volt)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('A-Destiny', '\b(A-Destiny)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('A-L', '\b(A-L)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AC', '(?<=^|[\s.-])AC\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AceAres', '\b(AceAres)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Aergia', '\[Aergia\]|-Aergia(?!-raws)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Afro', '\[Afro\]|-Afro\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AhmadDev', '\b(AhmadDev)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Akai', '\[Akai\]|-Akai\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AkihitoSubs', '\b(AkihitoSubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Almighty', '(?<=^|[\s.-])Almighty\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Alt', '\[Alt\]|-Alt\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ANE', '(?<=^|[\s.-])ANE\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ANiHLS', '\b(ANiHLS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Anime Chap', '\b(Anime[ .-]?Chap)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Anime Land', '\b(Anime[ .-]?Land)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Anime Time', '\b(Anime[ .-]?Time)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Anime-Heart', '\b(Anime[ .-]?Heart)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AnimeDynastyEN', '\b(AnimeDynastyEN)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AnimeKuro', '\b(AnimeKuro)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AnimeRG', '\b(AnimeRG)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Animesubs', '\b(Animesubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AnimeTR', '\b(AnimeTR)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Anitsu', '\b(Anitsu)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AniVoid', '\b(AniVoid)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AOmundson', '(?<=^|[\s.-])AOmundson\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ArataEnc', '\b(ArataEnc)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ARC', '\[ARC\]|-ARC\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AREY', '\b(AREY)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Arg0', '(?<=^|[\s.\[\]-])(?:\[Arg0\]|-?Arg0)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Ari', '\[Ari\]|-Ari\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Arid', '(?<=^|[\s.-])Arid\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('aro', '\b(aro)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Arukoru', '\b(Arukoru)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Asakura', '(?<=^|[\s.\[\]-])(?:\[Asakura\]|-?Asakura)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ASC', '\b(ASC)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Asenshi', '\b(Asenshi)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ASO', '\b(ASO)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AssMix', '\b(AssMix)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('AsukaRaws', 'Asuka[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ASW', '(?<=^|[\s.\[\]-])(?:\[ASW\]|-?ASW)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Ayashii', '\[Ayashii\]|-Ayashii\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('B00BA', '(?<=^|[\s.\[\]-])(?:\[B00BA\]|-?B00BA)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Baws', '\b(Baws)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Beatrice-Raws', 'Beatrice[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BJX', '\b(BJX)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BKC', '\b(BKC)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BlackLuster', '\b(BlackLuster)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BluDragon', '\b(BluDragon)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BlueLobster', '\b(BlueLobster)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BlurayDesuYo', '(?<=^|[\s.-])BlurayDesuYo\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Bolshevik', '\[Bolshevik\]|-Bolshevik\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('bonkai77', '\b(bonkai77)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Brrrrrrr', '\b(Brrrrrrr)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Bulldog', '\[Bulldog\]|-Bulldog\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Bunny-Apocalypse', '(?<=^|[\s.-])Bunny-Apocalypse\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cait-Sidhe', '(?<=^|[\s.-])Cait-Sidhe\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CameEsp', '\b(CameEsp)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cat66', '\b(Cat66)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CBB', '\b(CBB)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CBM', '\b(CBM)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CBT', '(?<=^|[\s.-])CBT\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cerberus', '\[Cerberus\]|-Cerberus\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CH', '\[CH\]|-CH\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Chihiro', '(?<=^|[\s.-])Chihiro\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Chimera', '\[Chimera\]|-Chimera\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Chotab', '(?<=^|[\s.-])Chotab\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cleo', '\[Cleo\]|-Cleo', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CoalGirls', '(?<=^|[\s.-])CoalGirls\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Commie', '(?<=^|[\s.-])Commie\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Crow', '\[Crow\]|-Crow\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CRUCiBLE', '(?<=^|[\s.\[\]-])(?:\[CRUCiBLE\]|-?CRUCiBLE)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CsS', '\b(CsS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CTR', '(?<=^|[\s.-])CTR\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CuaP', '\b(CuaP)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CUNNY', '\b(CUNNY)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cunnysseur', '\b(Cunnysseur)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Cyan', '\[Cyan\]|-Cyan\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('CyC', '\b(CyC)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('D-Z0N3', '(?<=^|[\s.-])D-Z0N3\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('D3', '\b(D3)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('D4C', '\b(D4C)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Daddy-Raws', 'Daddy[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DaddySubs', '\[Daddy(Subs)?\]|-Daddy(Subs)?\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Dae', '\b(Dae)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DameDesuYo', '\b(DameDesuYo)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DARKFLiX', '(?<=^|[\s.-])DARKFLiX\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Datte13', '\b(Datte13)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Davinci', '\[Davinci\]|-Davinci\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DBArabic', '\b(DBArabic)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Deadmau- RAWS', '\b(Deadmau[ .-]?[ .-]?RAWS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('deanzel', '(?<=^|[\s.-])deanzel\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Dekinai', '(?<=^|[\s.-])Dekinai\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DemiHuman', '\[DemiHuman\]|-DemiHuman\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DHD', '\b(DHD)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DKB', '(?i:\[DKB\]|-DKB\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Doki', '(?<=^|[\s.-])Doki\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DP', '\b(DP)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Drag', '(?<=^|[\s.-])Drag\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Dragon-Releases', '\b(Dragon-Releases)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DragsterPS', '\b(DragsterPS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DsunS', '\b(DsunS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('E.N.D', '(?<=^|[\s.-])E.N.D\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('EDGE', '\[EDGE\]|-EDGE\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('EJF', '\b(EJF)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('EMBER', '(?i:\[EMBER\]|-EMBER\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Emmid', '\[Emmid\]|-Emmid\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Erai-Raws', '(?<=^|[\s.\[\]-])(?:\[Erai-Raws\]|-?Erai-Raws)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Exiled-Destiny', '(?<=^|[\s.-])Exiled-Destiny\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('EXP', '(?<=^|[\s.-])EXP\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ExREN', '\b(ExREN)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FAV', '\[FAV\]|-FAV\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FFF', '(?<=^|[\s.-])FFF\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Final8', '(?<=^|[\s.-])Final8\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Fish', '\b((Baked|Dead|Space)Fish)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FLE', '(?i:\[FLE\]|-FLE\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FLFL', '\b(FLFL)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Flugel', '(?<=^|[\s.-])Flugel\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Foxtrot', '\[Foxtrot\]|-Foxtrot\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FraMeSToR', '(?<=^|[\s.\[\]-])(?:\[FraMeSToR\]|-?FraMeSToR)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Fumi-Raws', 'Fumi[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('FunArts', '\b(FunArts)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Galator', '\b(Galator)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Gao', '\[Gao\]|-Gao\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GERMini', '\b(GERMini)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GHOST', '\[GHOST\]|-GHOST\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GHS', '\b(GHS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GJM', '\b(GJM)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GS', '\b(GS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GSK_kun', '\b(GSK[._-]kun)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('GST', '\b(GST)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HAiKU', '\b(HAiKU)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HaiveMind', '\b(HaiveMind)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Hakata Ramen', '\b(Hakata[ .-]?Ramen)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Half-Baked', '\b(Half-Baked)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Hall_of_C', '\b(Hall_of_C)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Hark0N', '\b(Hark0N)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Harunatsu', '\[Harunatsu\]|-Harunatsu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HatSubs', '\b(HatSubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Hatsuyuki', '\[Hatsuyuki\]|-Hatsuyuki\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HAV1T', '\b(HAV1T)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('hchcsen', '(?i:\[hchcsen\]|-hchcsen\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Headpatter', '(?<=^|[\s.-])Headpatter\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HENiL', '\b(HENiL)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Hitoku', '\[Hitoku\]|-Hitoku\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HollowRoxas', '\b(HollowRoxas)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Holomux', '(?<=^|[\s.-])Holomux\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HorribleRips', '\b(HorribleRips)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HorribleSubs', '(?i:\[HorribleSubs\]|-HorribleSubs\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HR', '\[HR\]|-HR\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('hydes', '(?<=^|[\s.-])hydes\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('iAHD', '\b(iAHD)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ICEBLUE', '\b(ICEBLUE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('IK', '(?<=^|[\s.-])IK\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('iKaos', '\b(iKaos)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Impatience', '\[Impatience\]|-Impatience\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('inid4c', '\b(inid4c)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Inka-Subs', '\b(Inka-Subs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('iPUNISHER', '\b(iPUNISHER)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('IrizaRaws', 'Iriza[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Iznjie Biznjie', '(?<=^|[\s.-])Iznjie Biznjie\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('JacobSwaggedUp', '\b(JacobSwaggedUp)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Johnny-englishsubs', '\b(Johnny-englishsubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Judas', '(?<=^|[\s.\[\]-])(?:\[Judas\]|-?Judas)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Judgement', '\[Judgment\]|-Judgment\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('JySzE', '\b(JySzE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kaizoku', '\b(AnimeKaizoku)\b|\[Kaizoku\]|-Kaizoku\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kaleido', '(?<=^|[\s.-])Kaleido\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kallango', '\[Kallango\]|-Kallango\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kametsu', '(?<=^|[\s.-])Kametsu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KAN3D2M', '(?<=^|[\s.-])KAN3D2M\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kanjouteki', '\b(Kanjouteki)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kantai', '\[Kantai\]|-Kantai\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('karios', '\b(karios)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kawaiika-Raws', 'Kawaiika[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('kBaraka', '(?<=^|[\s.-])kBaraka\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KEKMASTERS', '\b(KEKMASTERS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KH', '(?<=^|[\s.-])KH\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kirion', '\b(Kirion)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KiyoshiStar', '\b(KS|KiyoshiStar)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('km', '\[km\]|-km\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('kmplx', '(?<=^|[\s.-])kmplx\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Koi-Raws', 'Koi[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Koitern', '\b(Koitern)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Koten_Gars', '(?<=^|[\s.-])Koten_Gars\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KQRM', '\b(KQRM)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KRP', '\b(KRP)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('kuchikirukia', '(?<=^|[\s.-])kuchikirukia\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Kulot', '\b(Kulot)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LazyRemux', '(?i:\[LazyRemux\]|-LazyRemux\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LCE', '\b(LCE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Legion', '\[Legion\]|-Legion\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Lia', '\[Lia\]|-Lia\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Licca', '\b(Licca)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Lilith-Raws', 'Lilith[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LoliHouse', '\b(LoliHouse)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LostYears', '(?<=^|[\s.\[\]-])(?:\[LostYears\]|-?LostYears)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LowPower-Raws', 'LowPower[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Lulu', '(?<=^|[\s.-])Lulu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('LYS1TH3A', '(?<=^|[\s.\[\]-])(?:\[LYS1TH3A\]|-?LYS1TH3A)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('M@nI', '\b(M@nI)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('mal lu zen', '\b(mal[ .-]lu[ .-]zen)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MALD', '\b(MALD)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Man.K', '\b(Man\.K)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Matsya', '\b(Matsya)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Maximus', '\[Maximus\]|-Maximus\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MC', '\b(MC)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('McBalls', '\b(McBalls)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MCLR', '\b(MCLR)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MCR', '\b(MCR)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MD', '\[MD\]|-MD\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('mdcx', '\b(mdcx)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Metal', '\[Metal\]|-Metal\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Metaljerk', '\b(Metaljerk)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MGD', '\b(MGD)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MiniFreeza', '\b(MiniFreeza)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MiniMTBB', '\b(MiniMTBB)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MinisCuba', '\b(MinisCuba)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MiniTheatre', '\b(MiniTheatre)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Mites', '\b(Mites)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MK', '\b(MK)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Modders Bay', '\b(Modders[ .-]?Bay)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Moozzi2', '\b(Moozzi2)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('mottoj', '(?<=^|[\s.-])mottoj\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Moxie', '(?i:\[Moxie\]|-Moxie\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Mr. Deadpool', '\b(Mr\.Deadpool)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('MTBB', '(?<=^|[\s.\[\]-])(?:\[MTBB\]|-?MTBB)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Mysteria', '(?<=^|[\s.-])Mysteria\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('naiyas', '\[naiyas\]|-naiyas\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NAN0', '(?<=^|[\s.\[\]-])(?:\[NAN0\]|-?NAN0)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NanakoRaws', 'Nanako[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NanDesuKa', '\b(NanDesuKa)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NC-Raws', 'NC[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('neko-raws', 'neko[ ._-]?(raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NemDiggers', '\b(NemDiggers)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('neoHEVC', '\b(neoHEVC)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Nep_Blanc', '\b(Nep[ ._-]Blanc)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Netaro', '(?<=^|[\s.\[\]-])(?:\[Netaro\]|-?Netaro)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('New-raws', 'New[ ._-]?(raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NH', '(?<=^|[\s.-])NH\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Nii-sama', '\[Nii-sama\]|-Nii-sama\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('niizk', '\b(niizk)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Nishi-Taku', '\b(Nishi-Taku)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Nokou', '\b(Nokou)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NoobSubs', '\b(N[eo][wo]b[ ._-]?Subs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Not-Vodes', '(?i:\[Not-Vodes\]|-Not-Vodes\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Noyr', '\b(Noyr)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NPC', '\[NPC\]|-NPC\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NS', '\b(NS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NSDAB', '\b(NSDAB)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('NTRM', '\b(NTRM)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Nyanpasu', '\b(Nyanpasu)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Ohys-Raws', 'Ohys[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Okay-Subs', '(?<=^|[\s.-])(?i)\[Okay-Subs\]', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('OldCastle', '\b(OldCastle)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('OnDeed', '\b(OnDeed)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Orphan', '(?<=^|[\s.-])Orphan\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('orz', '\b(orz)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('OZR', '(?<=^|[\s.-])OZR\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pandoratv-Raws', 'Pandoratv[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pantsu', '\[Pantsu\]|-Pantsu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pao', '\[Pao\]|-Pao\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('PAS', '\b(PAS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('peachflavored', '\b(peachflavored)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('phazer11', '\b(phazer11)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pixel', '\[Pixel\]|-Pixel\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pizza', '\[Pizza\]|-Pizza\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Plex Friendly', '\b(Plex[ .-]?Friendly)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('PMR', '(?<=^|[\s.\[\]-])(?:\[PMR\]|-?PMR)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pn8', '\b(Pn8)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('PnPSubs', '\b(PnPSubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('pog42', '(?<=^|[\s.-])pog42\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Polarwindz', '\b(Polarwindz)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Pookie', '(?<=^|[\s.-])Pookie\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Prof', '\[Prof\]|-Prof\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Project-gxs', '\b(Project-gxs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('PuyaSubs', '\b(PuyaSubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('pyroneko', '\b(pyroneko)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('QaS', '\b(QAS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('QCE', '\b(QCE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Quetzal', '(?<=^|[\s.-])Quetzal\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('RAI', '\b(RAI)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Raizel', '(?<=^|[\s.-])Raizel\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Rando235', '\b(Rando235)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Ranger', '\[Ranger\]|-Ranger\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Rapta', '\[Rapta\]|-Rapta\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Rasetsu', '(?<=^|[\s.-])Rasetsu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Raws-Maji', '\b(Raws-Maji)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Raze', '\[Raze\]|-Raze\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Reaktor', '\b(Reaktor)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('RedBlade', '\b(RedBlade)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ReinForce', '\b(ReinForce)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Remux', 'Remux', 'A remux is a digital video file that maintains the exact quality of the original source (like a Blu-ray or DVD) by copying the video and audio streams without re-encoding them, essentially creating a perfect 1:1 copy. Think of it like carefully transferring the contents of a Blu-ray disc into a more convenient container file format (typically MKV), similar to pouring fine wine from its bottle into a decanter without changing the wine itself.');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('REVO', '\b(REVO)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Reza', '\b(Reza)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('RH', '\b(RH)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('RightShiftBy2', '\b(RightShiftBy2)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Rip Time', '\b(Rip[ .-]?Time)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('RMX', '\b(RMX)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SAD', '\[SAD\]|-SAD\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Saizen', '(?<=^|[\s.-])Saizen\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Salieri', '\b(Salieri)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SallySubs', '(?<=^|[\s.-])SallySubs\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('sam', '(?<=^|[\s.\[\]-])(?:\[sam\]|-?sam)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Samir755', '\b(Samir755)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SanKyuu', '\b(SanKyuu)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SCP-2223', '\b(SCP-2223)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Scriptum', '\b(Scriptum)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Scryous-Raws', 'Scryous[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SCY', '(?<=^|[\s.-])SCY\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Seicher-Raws', 'Seicher[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SEiN', '\[SEiN\]|-SEiN\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('sekkusu&ok', '\b(sekkusu&ok)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Senjou', '(?<=^|[\s.-])Senjou\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Setsugen', '\b(Setsugen)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SEV', '(?<=^|[\s.-])(SEV|D0ct0rLew|Kira)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ShadyCrab', '\b(ShadyCrab)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SHFS', '\b(SHFS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Shimatta', '\b(Shimatta)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SHiN-gx', '\b(SHiN-gx)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('shincaps', '\b(shincaps)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Shiniori-Raws', 'Shiniori[ ._-]?(Raws)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ShowY', '\b(ShowY)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SLAX', '\b(SLAX)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Slyfox', '\b(Slyfox)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Smoke', '\[Smoke\]|-Smoke\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('smol', '(?i:\[smol\]|-smol\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SmugCat', '\b(SmugCat)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SNSbu', '\b(SNSbu)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SobsPlease', '\b(SobsPlease)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Sokudo', '\[Sokudo\]|-Sokudo\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SOLA', '\[SOLA\]|-SOLA\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SoLCE', '\b(SoLCE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Soldado', '\[Soldado\]|-Soldado\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SoM', '\[SoM\]|-SoM\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Some-Stuffs', '\b(Some-Stuffs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Spirale', '\b(Spirale)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SRLS', '\b(SRLS)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SRW', '\b(SRW)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SSA', '\b(SSA)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('StrayGods', '\b(StrayGods)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('STRiFE', '\[STRiFE\]|-STRiFE\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SubsPlease', '(?<=^|[\s.\[\]-])(?:\[SubsPlease\]|-?SubsPlease)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SubsPlus+', '(?<=^|[\s.-])SubsPlus+\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Suki Desu', '\[Suki[ .-]?Desu\]|-Suki[ .-]?Desu\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Sushi', '\[Sushi\]|-Sushi\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('TeamTurquoize', '\b(TeamTurquoize)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('TENEIGHTY', '\b(TENEIGHTY)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Tenrai Sensei', '\b(Tenrai[ .-]?Sensei)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Tenshi', '\[tenshi\]|-tenshi$', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Thighs', '\[Thighs\]|-Thighs\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('THORA', '(?<=^|[\s.-])THORA\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('TnF', '\b(TnF)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ToonsHub', '\b(ToonsHub)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('TOPKEK', '\b(TOPKEK)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Trix', '\[Trix\]|-Trix\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Tsundere', '(?<=^|[\s.-])Tsundere\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('TTGA', '(?i:\[TTGA\]|-TTGA\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('U3-Web', '\b(U3-Web)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('UDF', '(?<=^|[\s.-])UDF\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('UNBIASED', '\[UNBIASED\]|-UNBIASED\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('uP', '\[uP\]', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('URANIME', '\b(URANIME)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('USD', '\[USD\]|-USD\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('UWU', '\b(UWU)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Valenciano', '\b(Valenciano)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Vanilla', '\[Vanilla\]|-Vanilla\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VARYG', '(?<=^|[\s.\[\]-])(?:\[VARYG\]|-?VARYG)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VipapkStudios', '\b(VipapkStudios)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Vivid', '\[Vivid\]|-Vivid\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Vodes', '(?<=^|[\s.\[\]-])(?:\[Vodes\]|-?Vodes)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VULCAN', '\b(VULCAN)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('WaLMaRT', '\b(WaLMaRT)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Wardevil', '\[Wardevil\]|-Wardevil\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Watashi', '\[Watashi\]|-Watashi\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('WBDP', '(?<=^|[\s.-])WBDP\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('WSE', '\b(WSE)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('WtF Anime', '\b(WtF[ ._-]?Anime)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('xiao-av1', '\b(xiao-av1)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('xPearse', '\b(xPearse)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yabai', '\[Yabai\]|-Yabai\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yabai_Desu_NeRandomRemux', '\b(Yabai_Desu_NeRandomRemux)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('YakuboEncodes', '\b(YakuboEncodes)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yoghurt', '\b(Yoghurt)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('youshikibi', '\b(youshikibi)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('YuiSubs', '\b(YuiSubs)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yuki', '(?<=^|[\s.-])Yuki\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yun', '\[Yun\]|-Yun\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('YURASAKA', '\[YURASUKA\]|-YURASUKA\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('YURI', '(?i:\[YURI\]|-YURI\b)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Z4ST1N', '\b(Z4ST1N)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ZeroBuild', '(?<=^|[\s.\[\]-])(?:\[ZeroBuild\]|-?ZeroBuild)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ZigZag', '(?<=^|[\s.\[\]-])(?:\[ZigZag\]|-?ZigZag)(?=$|[\s.\[\]-])', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ZOIO', '\b(ZOIO)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ZR', '(?<=^|[\s.-])ZR\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Zurako', '(?<=^|[\s.-])Zurako\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('zza', '\[zza\]|-zza\b', '');
 
 -- Qualities
 -- (Provided by 2.qualities.sql - no inserts needed)
 
 -- Custom Formats
 
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-01-top-seadex-muxers)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-02-seadex-muxers)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-03-seadex-muxers)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-04-seadex-muxers)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 05 (Remuxes)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-05-remuxes)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-06-fansubs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 07 (P2P-Scene)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-07-p2pscene)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime BD Tier 08 (Mini Encodes)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-08-mini-encodes)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 1', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 2', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 3', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 4', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 5', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime LQ Groups', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-lq-groups)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Raws', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-raws)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 01 (Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-01-muxers)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 02 (Top FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-02-top-fansubs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 03 (Official Subs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-03-official-subs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 04 (Official Subs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-04-official-subs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 05 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-05-fansubs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime Web Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-06-fansubs)');
-INSERT INTO custom_formats (name, description) VALUES ('Anime WEB-DL Tier 1', 'Do not use Testing Purposes Only');
-INSERT INTO custom_formats (name, description) VALUES ('Anime WEB-DL Tier 2', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 01 (Top SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-01-top-seadex-muxers)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 02 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-02-seadex-muxers)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 03 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-03-seadex-muxers)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 04 (SeaDex Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-04-seadex-muxers)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 05 (Remuxes)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-05-remuxes)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-06-fansubs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 07 (P2P-Scene)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-07-p2pscene)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime BD Tier 08 (Mini Encodes)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-bd-tier-08-mini-encodes)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 1', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 2', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 3', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 4', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Bluray Tier 5', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime LQ Groups', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-lq-groups)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Raws', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-raws)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 01 (Muxers)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-01-muxers)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 02 (Top FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-02-top-fansubs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 03 (Official Subs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-03-official-subs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 04 (Official Subs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-04-official-subs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 05 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-05-fansubs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-06-fansubs)');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime WEB-DL Tier 1', 'Do not use Testing Purposes Only');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime WEB-DL Tier 2', 'Do not use Testing Purposes Only');
 
 -- ============================================================================
 -- DEPENDENT ENTITIES
@@ -484,2227 +484,2227 @@ WHERE qp.name = '1080p  Anime (BD)';
 
 -- Custom Format Conditions
 
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Aergia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arg0', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Legion', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LYS1TH3A', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'OZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'sam', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SCY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'smol', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SoM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Vanilla', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Vodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZeroBuild', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Netaro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Alt', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ARC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'aro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Baws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BKC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Brrrrrrr', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Chotab', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Crow', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CsS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CUNNY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cunnysseur', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'D-Z0N3', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dae', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Datte13', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DemiHuman', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Drag', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FLFL', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'hydes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'iKaos', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'JySzE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LostYears', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Lulu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Matsya', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'McBalls', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Metal', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Moxie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MTBB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not-Vodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Noyr', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NSDAB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Okay-Subs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'pog42', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'pyroneko', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'RAI', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Reza', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Shimatta', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Smoke', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Spirale', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Thighs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'UDF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Yuki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ASC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AssMix', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Ayashii', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'B00BA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CBT', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CRUCiBLE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CTR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CyC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dekinai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'EXP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Flugel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Galator', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GSK_kun', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Holomux', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'IK', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kaizoku', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kametsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KH', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kuchikirukia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LazyRemux', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MK', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Mysteria', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NAN0', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Netaro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pn8', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pookie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Quetzal', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Rasetsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Senjou', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ShowY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WBDP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WSE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Yoghurt', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'YURI', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZOIO', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'PMR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FLE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, '9volt', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AOmundson', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Asakura', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ASO', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bolshevik', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bulldog', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cait-Sidhe', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Chihiro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Chimera', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CoalGirls', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Commie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'D3', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Davinci', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'deanzel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Doki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dragon-Releases', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Foxtrot', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GHS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HaiveMind', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'hchcsen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Iznjie Biznjie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kaleido', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'karios', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kBaraka', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kmplx', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Koitern', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Koten_Gars', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kulot', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Lia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MCLR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'mottoj', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NH', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NTRM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Orphan', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'RMX', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SallySubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Scriptum', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ShadyCrab', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SNSbu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SOLA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'THORA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Tsundere', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'UWU', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'xPearse', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Headpatter', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BluDragon', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'D4C', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'E.N.D', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'PMR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Raizel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'REVO', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SRLS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'TTGA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'VULCAN', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FraMeSToR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray Raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Afro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Akai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Almighty', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ANE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Asenshi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BlurayDesuYo', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bunny-Apocalypse', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CH', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'EJF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Exiled-Destiny', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FFF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Final8', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Harunatsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Impatience', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Inka-Subs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Judgement', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kantai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LCE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Licca', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Nii-sama', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'niizk', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Nishi-Taku', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'OnDeed', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'orz', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'PAS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'peachflavored', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Saizen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SCP-2223', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SHiN-gx', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SmugCat', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Soldado', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Sushi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Vivid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Watashi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Yabai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Zurako', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'A-L', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ANiHLS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CBM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DHD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DragsterPS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HAiKU', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Hark0N', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'iAHD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'inid4c', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KiyoshiStar', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MCR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NPC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'RedBlade', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'RH', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SEV', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'STRiFE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'TENEIGHTY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WaLMaRT', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DVD', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AkihitoSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arukoru', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'EDGE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'EMBER', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GHOST', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Judas', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'naiyas', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Nep_Blanc', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Prof', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ShirÏƒ', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'YURASAKA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not Remux', 'release_group', 'all', 1, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LYS1TH3A', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MTBB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'OZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'sam', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SCY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'smol', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Vodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not Remux', 'release_group', 'all', 1, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Drag', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'hydes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Lulu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Okay-Subs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'pog42', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'UDF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'YURI', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not Remux', 'release_group', 'all', 1, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CBT', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CTR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dekinai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'EXP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Flugel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Headpatter', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Holomux', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'IK', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kametsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KH', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kuchikirukia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Mysteria', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Netaro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pookie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Quetzal', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Rasetsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Senjou', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WBDP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 3';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not Remux', 'release_group', 'all', 1, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, '9volt', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AOmundson', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Asakura', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cait-Sidhe', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Chihiro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CoalGirls', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Commie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'deanzel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Doki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'hchcsen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Iznjie Biznjie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kaleido', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kBaraka', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'kmplx', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Koten_Gars', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'mottoj', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Orphan', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SallySubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'THORA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Tsundere', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 4';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Bluray', 'source', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not Remux', 'release_group', 'all', 1, 1
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Almighty', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ANE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BlurayDesuYo', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FFF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Final8', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Raizel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Saizen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Zurako', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Bluray Tier 5';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, '$tore-Chill', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, '0neshot', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'A-Destiny', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AceAres', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AhmadDev', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Anime Chap', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Anime Land', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Anime Time', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AnimeDynastyEN', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AnimeKuro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AnimeRG', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Animesubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AnimeTR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Anitsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AniVoid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ArataEnc', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AREY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Ari', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BJX', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BlackLuster', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'bonkai77', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CameEsp', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cat66', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CBB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cerberus', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cleo', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'CuaP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DaddySubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DARKFLiX', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DBArabic', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Deadmau- RAWS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DKB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DsunS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Emmid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ExREN', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FAV', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Fish', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'FunArts', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GERMini', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Hakata Ramen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Hall_of_C', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Hatsuyuki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HAV1T', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HENiL', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Hitoku', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HollowRoxas', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ICEBLUE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'iPUNISHER', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'JacobSwaggedUp', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Johnny-englishsubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kallango', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kanjouteki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KEKMASTERS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kirion', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KQRM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KRP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LoliHouse', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'M@nI', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'mal lu zen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Man.K', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Maximus', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'mdcx', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Metaljerk', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MGD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MiniFreeza', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MiniMTBB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MinisCuba', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MiniTheatre', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Mites', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Modders Bay', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Mr. Deadpool', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NemDiggers', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'neoHEVC', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Nokou', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NoobSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Nyanpasu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'OldCastle', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pantsu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pao', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'phazer11', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pixel', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Plex Friendly', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'PnPSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Polarwindz', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Project-gxs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'PuyaSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'QaS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'QCE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Rando235', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Ranger', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Rapta', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Raze', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Reaktor', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'RightShiftBy2', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Rip Time', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SAD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Salieri', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Samir755', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SanKyuu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SEiN', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'sekkusu&ok', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SHFS', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'shincaps', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SLAX', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Sokudo', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SRW', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SSA', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'StrayGods', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Suki Desu', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'TeamTurquoize', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Tenrai Sensei', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'TnF', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'TOPKEK', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Trix', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'U3-Web', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'UNBIASED', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'uP', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'USD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Valenciano', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'VipapkStudios', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Wardevil', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WtF Anime', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'xiao-av1', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Yabai_Desu_NeRandomRemux', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'YakuboEncodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'youshikibi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'YuiSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Yun', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'zza', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ToonsHub', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AsukaRaws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Beatrice-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Daddy-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Fumi-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'IrizaRaws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kawaiika-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'km', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Koi-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Lilith-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LowPower-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Moozzi2', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NanakoRaws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NC-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'neko-raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'New-raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Ohys-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pandoratv-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Raws-Maji', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ReinForce', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Scryous-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Seicher-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Shiniori-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Raws';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arg0', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arid', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Baws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LostYears', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'LYS1TH3A', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'McBalls', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'sam', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SCY', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Setsugen', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'smol', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SoM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Vodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Z4ST1N', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZeroBuild', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Netaro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Asakura', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Cyan', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dae', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Foxtrot', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Gao', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GSK_kun', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Half-Baked', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HatSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MALD', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'MTBB', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Not-Vodes', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Okay-Subs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Pizza', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Reza', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Slyfox', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SoLCE', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Tenshi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SubsPlus+', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Erai-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'BlueLobster', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GST', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HorribleRips', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HorribleSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KAN3D2M', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'KiyoshiStar', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Lia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'NanDesuKa', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'URANIME', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'VARYG', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ZigZag', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SubsPlease', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Judas', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'ASW', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, '9volt', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'GJM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kaleido', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Kantai', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'SobsPlease', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Some-Stuffs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBDL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Asenshi', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Chihiro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Commie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'DameDesuYo', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Doki', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Tsundere', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEB-DL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEB', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Subsplease', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 1';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEB-DL', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'WEB', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Erai-Raws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'HorribleSubs', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Subsplus+', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
-INSERT INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'VARYG', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
@@ -2715,683 +2715,683 @@ WHERE cf.name = 'Anime WEB-DL Tier 2';
 
 -- Regular Expression Tags
 
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = '9volt' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = '9volt' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'AC' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'AC' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Almighty' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Almighty' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'ANE' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'ANE' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'AOmundson' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'AOmundson' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Arid' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Arid' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Asakura' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Asakura' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'BlurayDesuYo' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'BlurayDesuYo' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Bunny-Apocalypse' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Bunny-Apocalypse' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Cait-Sidhe' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Cait-Sidhe' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CBT' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CBT' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Chihiro' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Chihiro' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Chotab' AND t.name = 'Bluray';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Chotab' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CoalGirls' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CoalGirls' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Commie' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Commie' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CTR' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'CTR' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'D-Z0N3' AND t.name = 'Bluray';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'D-Z0N3' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'DARKFLiX' AND t.name = 'HDTV';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'DARKFLiX' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'deanzel' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'deanzel' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Dekinai' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Dekinai' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Doki' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Doki' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Drag' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Drag' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'E.N.D' AND t.name = 'Bluray';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'E.N.D' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Erai-Raws' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Erai-Raws' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Exiled-Destiny' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Exiled-Destiny' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'EXP' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'EXP' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'FFF' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'FFF' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Final8' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Final8' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Flugel' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Flugel' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'FraMeSToR' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'FraMeSToR' AND t.name = 'Remux';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'hchcsen' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'hchcsen' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Headpatter' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Headpatter' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Holomux' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Holomux' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'HorribleSubs' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'HorribleSubs' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'hydes' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'hydes' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'IK' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'IK' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Iznjie Biznjie' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Iznjie Biznjie' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Kaleido' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Kaleido' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Kametsu' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Kametsu' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'KAN3D2M' AND t.name = 'Bluray';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'KAN3D2M' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kBaraka' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kBaraka' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'KH' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'KH' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kmplx' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kmplx' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Koten_Gars' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Koten_Gars' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kuchikirukia' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'kuchikirukia' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'LazyRemux' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'LazyRemux' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Lulu' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Lulu' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'LYS1TH3A' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'LYS1TH3A' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'mottoj' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'mottoj' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'MTBB' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'MTBB' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Mysteria' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Mysteria' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'NAN0' AND t.name = 'Bluray';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'NAN0' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Netaro' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Netaro' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'NH' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'NH' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Not-Vodes' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Not-Vodes' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Okay-Subs' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Okay-Subs' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Orphan' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Orphan' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'OZR' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'OZR' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'pog42' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'pog42' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Pookie' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Pookie' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Quetzal' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Quetzal' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Raizel' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Raizel' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Rasetsu' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Rasetsu' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Remux' AND t.name = 'Codec';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Remux' AND t.name = 'Lossless';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Remux' AND t.name = 'h264';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Remux' AND t.name = 'h265';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Saizen' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Saizen' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SallySubs' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SallySubs' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'sam' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'sam' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SCY' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SCY' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Senjou' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Senjou' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SEV' AND t.name = 'HEVC';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SEV' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'smol' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'smol' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SubsPlease' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SubsPlease' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SubsPlus+' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'SubsPlus+' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'THORA' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'THORA' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Tsundere' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Tsundere' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'TTGA' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'TTGA' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'UDF' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'UDF' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'VARYG' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'VARYG' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Vodes' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Vodes' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'WBDP' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'WBDP' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Yuki' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Yuki' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'YURI' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'YURI' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'ZR' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'ZR' AND t.name = 'Release Group';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Zurako' AND t.name = 'Anime';
-INSERT INTO regular_expression_tags (regular_expression_name, tag_name)
+INSERT OR IGNORE INTO regular_expression_tags (regular_expression_name, tag_name)
 SELECT re.name, t.name
 FROM regular_expressions re, tags t
 WHERE re.name = 'Zurako' AND t.name = 'Release Group';
@@ -8058,4 +8058,5 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'Anime WEB-DL Tier 2', 'VARYG', re.name
 FROM regular_expressions re
 WHERE re.name = 'VARYG';
+
 
