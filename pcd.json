@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Custom anime quality profiles and custom formats for Sonarr",
   "arr_types": ["sonarr"],
+  "dependencies": {
+    "https://github.com/Dictionarry-Hub/schema": "1.1.0"
+  },
   "authors": [{"name": "sgriosadair"}],
   "repository": "https://github.com/sgriosadair/profilarr-anime",
   "tags": ["anime", "sonarr"],
