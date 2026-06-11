@@ -492,8 +492,6 @@ INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DB', '\b(DB)\b', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Raw Files', '\b(Raw\ Files)\b', '');
 
-INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HIDIVE', '(HIDI(VE)?)', '');
-INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VRV', '(VRV)', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v0', '(|\d)(v0)', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v1', '(|\d)(v1)', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v2', '(|\d)(v2)|(Repack|Proper|Rerip)', '');
@@ -534,8 +532,6 @@ INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 05 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-05-fansubs)');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-06-fansubs)');
 
-INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('HIDIVE', 'Matches HIDIVE streaming service releases.');
-INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('VRV', 'Matches VRV streaming service releases.');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v0', 'Anime version 0 - initial release with known issues. From TRaSH-Guides.');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v1', 'Anime version 1 - first repack/proper. From TRaSH-Guides.');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v2', 'Anime version 2 - second repack/proper. From TRaSH-Guides.');
@@ -2420,15 +2416,6 @@ INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, 
 SELECT cf.name, 'v4', 'release_title', 'all', 0, 1
 FROM custom_formats cf
 WHERE cf.name = 'v4';
--- Streaming Services
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HIDIVE', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'HIDIVE';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'VRV', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'VRV';
 -- Dubs Only (OR logic: required=0)
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Dubbed', 'release_title', 'all', 0, 0
@@ -3370,19 +3357,7 @@ WHERE qp.name = '1080p  Anime' AND cf.name = '1080p WEB-DL';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime' AND cf.name = 'CR';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime' AND cf.name = 'HIDIVE';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime' AND cf.name = 'v2';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime' AND cf.name = 'VRV';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 1
 FROM quality_profiles qp, custom_formats cf
@@ -3550,19 +3525,7 @@ WHERE qp.name = '1080p  Anime (BD)' AND cf.name = '1080p WEB-DL';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'CR';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'HIDIVE';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'v2';
-INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 2
-FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'VRV';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 1
 FROM quality_profiles qp, custom_formats cf
@@ -6028,14 +5991,6 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'v4', 'v4', re.name
 FROM regular_expressions re
 WHERE re.name = 'v4';
-INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
-SELECT 'HIDIVE', 'HIDIVE', re.name
-FROM regular_expressions re
-WHERE re.name = 'HIDIVE';
-INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
-SELECT 'VRV', 'VRV', re.name
-FROM regular_expressions re
-WHERE re.name = 'VRV';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Dubs Only', 'Dubbed', re.name
 FROM regular_expressions re
