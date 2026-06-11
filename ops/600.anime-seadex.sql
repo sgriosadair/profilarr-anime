@@ -2714,6 +2714,27 @@ UPDATE custom_format_conditions
 SET arr_type = 'sonarr'
 WHERE name = 'Bluray raw' AND type = 'source' AND arr_type = 'all';
 
+-- Re-add Bluray raw conditions and sources if removed (idempotent)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+VALUES
+    ('Anime BD Tier 01 (Top SeaDex Muxers)', 'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 02 (SeaDex Muxers)',     'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 03 (SeaDex Muxers)',     'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 04 (SeaDex Muxers)',     'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 05 (Remuxes)',           'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 07 (P2P-Scene)',         'Bluray raw', 'source', 'sonarr', 0, 0),
+    ('Anime BD Tier 08 (Mini Encodes)',      'Bluray raw', 'source', 'sonarr', 0, 0);
+
+INSERT OR IGNORE INTO condition_sources (custom_format_name, condition_name, source)
+VALUES
+    ('Anime BD Tier 01 (Top SeaDex Muxers)', 'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 02 (SeaDex Muxers)',     'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 03 (SeaDex Muxers)',     'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 04 (SeaDex Muxers)',     'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 05 (Remuxes)',           'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 07 (P2P-Scene)',         'Bluray raw', 'bluray_raw'),
+    ('Anime BD Tier 08 (Mini Encodes)',      'Bluray raw', 'bluray_raw');
+
 -- ============================================================================
 -- JUNCTION TABLES
 -- ============================================================================
