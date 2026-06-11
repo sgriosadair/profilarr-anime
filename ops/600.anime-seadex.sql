@@ -492,6 +492,26 @@ INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('DB', '\b(DB)\b', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Raw Files', '\b(Raw\ Files)\b', '');
 
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('HIDIVE', '(HIDI(VE)?)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VRV', '(VRV)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v0', '(|\d)(v0)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v1', '(|\d)(v1)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v2', '(|\d)(v2)|(Repack|Proper|Rerip)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Not v3 or v4', '(|\d)(v[3-4])|((repack|proper)[23])|REAL\.(REAL\.)?(PROPER|REPACK)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v3', '(|\d)(v3)|((repack|proper)2)|(REAL\.(PROPER|REPACK))', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Not v4', '(|\d)(v[4])|((repack|proper)3)|REAL\.(REAL\.)(PROPER|REPACK)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('v4', '(|\d)(v4)|((repack|proper)3)|(REAL\.REAL\.(PROPER|REPACK))', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Dubbed', '(?<!(Dual|Multi)[-_. ]?Audio).*((?<!multi-)(dub(bed)?)|(funi|eng(lish)?)_?dub)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Golumpa', '(Golumpa)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KaiDubs (Not Dual Audio)', '^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\+EN|EN\+(JA|ZH|KO))).*(KaiDubs)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KamiFS', '(KamiFS)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('KS (Not Dual Audio)', '^(?!.*(dual[ ._-]?audio|[([]dual[])]|(JA|ZH|KO)\+EN|EN\+(JA|ZH|KO))).*KS', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('torenter69', '(torenter69)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Yameii', '\[Yameii\]|-Yameii', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('VOSTFR', '(VOST.*?FR(E|A)?)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SUBFRENCH', '(SUBFR(A|ENCH)?)', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('SD Bluray', '(?i)(?:blu[-_. ]?ray|BD).*(?:480|576)[pi]|(?:480|576)[pi].*(?:blu[-_. ]?ray|BD)', '');
+
 -- Qualities
 -- (Provided by 2.qualities.sql - no inserts needed)
 
@@ -513,6 +533,18 @@ INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 04 (Official Subs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-04-official-subs)');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 05 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-05-fansubs)');
 INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Anime Web Tier 06 (FanSubs)', '[Custom format from TRaSH-Guides.](https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats#anime-web-tier-06-fansubs)');
+
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('HIDIVE', 'Matches HIDIVE streaming service releases.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('VRV', 'Matches VRV streaming service releases.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v0', 'Anime version 0 - initial release with known issues. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v1', 'Anime version 1 - first repack/proper. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v2', 'Anime version 2 - second repack/proper. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v3', 'Anime version 3 - third repack/proper. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('v4', 'Anime version 4 - fourth repack/proper. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('Dubs Only', 'Matches dubbed-only anime releases. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('VOSTFR', 'Matches French-subtitled (VOSTFR/SUBFRENCH) anime releases. From TRaSH-Guides.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('BeyondHD', 'Matches BeyondHD release group. Banned due to full disc only releases.');
+INSERT OR IGNORE INTO custom_formats (name, description) VALUES ('SD Bluray Encodes', 'Matches SD-resolution (480p/576p) Blu-ray encoded releases.');
 
 -- ============================================================================
 -- DEPENDENT ENTITIES
@@ -2358,6 +2390,94 @@ SELECT cf.name, 'Tsundere', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
 
+
+-- Anime Versions (v0-v4) from TRaSH-Guides
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v0', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v0';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v1', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v1';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v2', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v2';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Not v3 or v4', 'release_title', 'all', 1, 1
+FROM custom_formats cf
+WHERE cf.name = 'v2';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v3', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v3';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Not v4', 'release_title', 'all', 1, 1
+FROM custom_formats cf
+WHERE cf.name = 'v3';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v4', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v4';
+-- Streaming Services
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'HIDIVE', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'HIDIVE';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'VRV', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'VRV';
+-- Dubs Only (OR logic: required=0)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Dubbed', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Golumpa', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KaiDubs (Not Dual Audio)', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KamiFS', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KS (Not Dual Audio)', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'torenter69', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Yameii', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+-- VOSTFR (OR logic: required=0)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'VOSTFR', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'VOSTFR';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'SUBFRENCH', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'VOSTFR';
+-- BeyondHD (release_group)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'BeyondHD', 'release_group', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'BeyondHD';
+-- SD Bluray Encodes
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'SD Bluray', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'SD Bluray Encodes';
+
 -- ============================================================================
 -- JUNCTION TABLES
 -- ============================================================================
@@ -3218,7 +3338,7 @@ WHERE qp.name = '1080p  Anime' AND cf.name = 'Anime Web Tier 05 (FanSubs)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 145
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime' AND cf.name = 'HEVC';
+WHERE qp.name = '1080p  Anime' AND cf.name = 'x265';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 100
 FROM quality_profiles qp, custom_formats cf
@@ -3250,7 +3370,7 @@ WHERE qp.name = '1080p  Anime' AND cf.name = '1080p WEB-DL';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime' AND cf.name = 'Crunchyroll';
+WHERE qp.name = '1080p  Anime' AND cf.name = 'CR';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
@@ -3390,7 +3510,7 @@ WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime Web Tier 05 (FanSubs)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 145
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'HEVC';
+WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'x265';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 100
 FROM quality_profiles qp, custom_formats cf
@@ -3430,7 +3550,7 @@ WHERE qp.name = '1080p  Anime (BD)' AND cf.name = '1080p WEB-DL';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
-WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Crunchyroll';
+WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'CR';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
 SELECT qp.name, cf.name, 'all', 2
 FROM quality_profiles qp, custom_formats cf
@@ -5877,4 +5997,87 @@ SELECT 'Anime Raws', 'Shiniori-Raws', re.name
 FROM regular_expressions re
 WHERE re.name = 'Shiniori-Raws';
 
+-- ============================================================================
+-- Condition patterns for new CFs (v0-v4, HIDIVE, VRV, Dubs Only, VOSTFR, BeyondHD, SD Bluray Encodes)
+-- ============================================================================
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v0', 'v0', re.name
+FROM regular_expressions re
+WHERE re.name = 'v0';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v1', 'v1', re.name
+FROM regular_expressions re
+WHERE re.name = 'v1';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v2', 'v2', re.name
+FROM regular_expressions re
+WHERE re.name = 'v2';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v2', 'Not v3 or v4', re.name
+FROM regular_expressions re
+WHERE re.name = 'Not v3 or v4';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v3', 'v3', re.name
+FROM regular_expressions re
+WHERE re.name = 'v3';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v3', 'Not v4', re.name
+FROM regular_expressions re
+WHERE re.name = 'Not v4';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'v4', 'v4', re.name
+FROM regular_expressions re
+WHERE re.name = 'v4';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'HIDIVE', 'HIDIVE', re.name
+FROM regular_expressions re
+WHERE re.name = 'HIDIVE';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'VRV', 'VRV', re.name
+FROM regular_expressions re
+WHERE re.name = 'VRV';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'Dubbed', re.name
+FROM regular_expressions re
+WHERE re.name = 'Dubbed';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'Golumpa', re.name
+FROM regular_expressions re
+WHERE re.name = 'Golumpa';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'KaiDubs (Not Dual Audio)', re.name
+FROM regular_expressions re
+WHERE re.name = 'KaiDubs (Not Dual Audio)';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'KamiFS', re.name
+FROM regular_expressions re
+WHERE re.name = 'KamiFS';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'KS (Not Dual Audio)', re.name
+FROM regular_expressions re
+WHERE re.name = 'KS (Not Dual Audio)';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'torenter69', re.name
+FROM regular_expressions re
+WHERE re.name = 'torenter69';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Dubs Only', 'Yameii', re.name
+FROM regular_expressions re
+WHERE re.name = 'Yameii';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'VOSTFR', 'VOSTFR', re.name
+FROM regular_expressions re
+WHERE re.name = 'VOSTFR';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'VOSTFR', 'SUBFRENCH', re.name
+FROM regular_expressions re
+WHERE re.name = 'SUBFRENCH';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'BeyondHD', 'BeyondHD', re.name
+FROM regular_expressions re
+WHERE re.name = 'BeyondHD';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'SD Bluray Encodes', 'SD Bluray', re.name
+FROM regular_expressions re
+WHERE re.name = 'SD Bluray';
 
