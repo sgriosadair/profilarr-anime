@@ -2709,6 +2709,11 @@ SELECT cf.name, 'VARYG', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
 
+-- Fix arr_type for Bluray raw conditions (sonarr-only source type)
+UPDATE custom_format_conditions
+SET arr_type = 'sonarr'
+WHERE name = 'Bluray raw' AND type = 'source' AND arr_type = 'all';
+
 -- ============================================================================
 -- JUNCTION TABLES
 -- ============================================================================
