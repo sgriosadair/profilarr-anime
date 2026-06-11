@@ -485,7 +485,7 @@ WHERE qp.name = '1080p  Anime (BD)';
 -- Custom Format Conditions
 
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -553,7 +553,7 @@ SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -737,7 +737,7 @@ SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -905,7 +905,7 @@ SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1097,7 +1097,7 @@ SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 05 (Remuxes)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1309,7 +1309,7 @@ SELECT cf.name, 'Bluray', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1389,7 +1389,7 @@ SELECT cf.name, 'WaLMaRT', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 07 (P2P-Scene)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Bluray raw', 'source', 'all', 0, 0
+SELECT cf.name, 'Bluray raw', 'source', 'sonarr', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 08 (Mini Encodes)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -2708,6 +2708,11 @@ INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, 
 SELECT cf.name, 'VARYG', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime WEB-DL Tier 2';
+
+-- Fix arr_type for any existing Bluray raw rows imported before this change
+UPDATE custom_format_conditions
+SET arr_type = 'sonarr'
+WHERE name = 'Bluray raw' AND type = 'source' AND arr_type = 'all';
 
 -- ============================================================================
 -- JUNCTION TABLES
