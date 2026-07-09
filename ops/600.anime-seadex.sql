@@ -433,6 +433,11 @@ INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('
 
 -- New regex entries for groups added in TRaSH Guides update
 
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('BlackRose', '\b(BlackRose)\b', '');
+INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Sylvar', '\b(Sylvar)\b', '');
+
+-- New regex entries for groups added in TRaSH Guides update
+
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('0x539', '\b(0x539)\b', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('ABdex', '\b(ABdex)\b', '');
 INSERT OR IGNORE INTO regular_expressions (name, pattern, description) VALUES ('Animorphs', '\b(Animorphs)\b', '');
@@ -1213,6 +1218,9 @@ INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, 
 SELECT cf.name, 'Raw Files', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime LQ Groups';
+
+-- New LQ group conditions added from TRaSH Guides update
+
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'AsukaRaws', 'release_group', 'all', 0, 0
 FROM custom_formats cf
@@ -1379,6 +1387,85 @@ UPDATE custom_format_conditions
 SET arr_type = 'sonarr'
 WHERE name = 'Bluray raw' AND type = 'source' AND arr_type = 'all';
 
+
+-- Anime Versions (v0-v4) from TRaSH-Guides
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v0', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v0';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v1', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v1';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v2', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v2';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Not v3 or v4', 'release_title', 'all', 1, 1
+FROM custom_formats cf
+WHERE cf.name = 'v2';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v3', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v3';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Not v4', 'release_title', 'all', 1, 1
+FROM custom_formats cf
+WHERE cf.name = 'v3';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'v4', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'v4';
+-- Dubs Only (OR logic: required=0)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Dubbed', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Golumpa', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KaiDubs (Not Dual Audio)', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KamiFS', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'KS (Not Dual Audio)', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'torenter69', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Yameii', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Dubs Only';
+-- VOSTFR (OR logic: required=0)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'VOSTFR', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'VOSTFR';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'SUBFRENCH', 'release_title', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'VOSTFR';
+-- BeyondHD (release_group)
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'BeyondHD', 'release_group', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'BeyondHD';
+-- SD Bluray Encodes
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'SD Bluray', 'release_title', 'all', 0, 1
+FROM custom_formats cf
+WHERE cf.name = 'SD Bluray Encodes';
+
 -- New tier conditions from TRaSH Guides update
 
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1402,10 +1489,6 @@ SELECT cf.name, 'Moxie', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'NAN0', 'release_group', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'sam', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
@@ -1418,10 +1501,6 @@ SELECT cf.name, 'SoM', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'ZR', 'release_group', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Aergia', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
@@ -1431,6 +1510,10 @@ FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Arid', 'release_group', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'BlackRose', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1475,10 +1558,6 @@ FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Orphan', 'release_group', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'PMR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1562,6 +1641,10 @@ SELECT cf.name, 'Mysteria', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'NAN0', 'release_group', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'Netaro', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
@@ -1583,6 +1666,10 @@ FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'P9', 'release_group', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'PMR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1614,7 +1701,15 @@ SELECT cf.name, 'SubsMix', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'Sylvar', 'release_group', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
 SELECT cf.name, 'uba', 'release_group', 'all', 0, 0
+FROM custom_formats cf
+WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
+INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
+SELECT cf.name, 'ZR', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -2385,85 +2480,6 @@ INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, 
 SELECT cf.name, 'Tsundere', 'release_group', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
-
-
--- Anime Versions (v0-v4) from TRaSH-Guides
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'v0', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'v0';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'v1', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'v1';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'v2', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'v2';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Not v3 or v4', 'release_title', 'all', 1, 1
-FROM custom_formats cf
-WHERE cf.name = 'v2';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'v3', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'v3';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Not v4', 'release_title', 'all', 1, 1
-FROM custom_formats cf
-WHERE cf.name = 'v3';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'v4', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'v4';
--- Dubs Only (OR logic: required=0)
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Dubbed', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Golumpa', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'KaiDubs (Not Dual Audio)', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'KamiFS', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'KS (Not Dual Audio)', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'torenter69', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'Yameii', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'Dubs Only';
--- VOSTFR (OR logic: required=0)
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'VOSTFR', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'VOSTFR';
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'SUBFRENCH', 'release_title', 'all', 0, 0
-FROM custom_formats cf
-WHERE cf.name = 'VOSTFR';
--- BeyondHD (release_group)
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'BeyondHD', 'release_group', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'BeyondHD';
--- SD Bluray Encodes
-INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'SD Bluray', 'release_title', 'all', 0, 1
-FROM custom_formats cf
-WHERE cf.name = 'SD Bluray Encodes';
 
 -- ============================================================================
 -- JUNCTION TABLES
@@ -3431,23 +3447,23 @@ SELECT qp.name, cf.name, 'all', -9999
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime' AND cf.name = 'VVC';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 1300
+SELECT qp.name, cf.name, 'all', 1400
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 01 (Top SeaDex Muxers)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 1200
+SELECT qp.name, cf.name, 'all', 1300
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 02 (SeaDex Muxers)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 1000
+SELECT qp.name, cf.name, 'all', 1200
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 03 (SeaDex Muxers)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 900
+SELECT qp.name, cf.name, 'all', 1100
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 04 (SeaDex Muxers)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 800
+SELECT qp.name, cf.name, 'all', 1000
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 05 (Remuxes)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
@@ -3471,11 +3487,11 @@ SELECT qp.name, cf.name, 'all', 300
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime Web Tier 04 (Official Subs)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 200
+SELECT qp.name, cf.name, 'all', 900
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 06 (FanSubs)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
-SELECT qp.name, cf.name, 'all', 200
+SELECT qp.name, cf.name, 'all', 800
 FROM quality_profiles qp, custom_formats cf
 WHERE qp.name = '1080p  Anime (BD)' AND cf.name = 'Anime BD Tier 07 (P2P-Scene)';
 INSERT INTO quality_profile_custom_formats (quality_profile_name, custom_format_name, arr_type, score)
@@ -3633,10 +3649,6 @@ SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'Moxie', re.name
 FROM regular_expressions re
 WHERE re.name = 'Moxie';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
-SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'NAN0', re.name
-FROM regular_expressions re
-WHERE re.name = 'NAN0';
-INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'sam', re.name
 FROM regular_expressions re
 WHERE re.name = 'sam';
@@ -3649,10 +3661,6 @@ SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'SoM', re.name
 FROM regular_expressions re
 WHERE re.name = 'SoM';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
-SELECT 'Anime BD Tier 01 (Top SeaDex Muxers)', 'ZR', re.name
-FROM regular_expressions re
-WHERE re.name = 'ZR';
-INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Aergia', re.name
 FROM regular_expressions re
 WHERE re.name = 'Aergia';
@@ -3664,6 +3672,10 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Arid', re.name
 FROM regular_expressions re
 WHERE re.name = 'Arid';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'BlackRose', re.name
+FROM regular_expressions re
+WHERE re.name = 'BlackRose';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'FateSucks', re.name
 FROM regular_expressions re
@@ -3708,10 +3720,6 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Orphan', re.name
 FROM regular_expressions re
 WHERE re.name = 'Orphan';
-INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
-SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'PMR', re.name
-FROM regular_expressions re
-WHERE re.name = 'PMR';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 02 (SeaDex Muxers)', 'Vodes', re.name
 FROM regular_expressions re
@@ -3793,6 +3801,10 @@ SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Mysteria', re.name
 FROM regular_expressions re
 WHERE re.name = 'Mysteria';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'NAN0', re.name
+FROM regular_expressions re
+WHERE re.name = 'NAN0';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Netaro', re.name
 FROM regular_expressions re
 WHERE re.name = 'Netaro';
@@ -3816,6 +3828,10 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'P9', re.name
 FROM regular_expressions re
 WHERE re.name = 'P9';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'PMR', re.name
+FROM regular_expressions re
+WHERE re.name = 'PMR';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'RUDY', re.name
 FROM regular_expressions re
@@ -3845,9 +3861,17 @@ SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'SubsMix', re.name
 FROM regular_expressions re
 WHERE re.name = 'SubsMix';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'Sylvar', re.name
+FROM regular_expressions re
+WHERE re.name = 'Sylvar';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'uba', re.name
 FROM regular_expressions re
 WHERE re.name = 'uba';
+INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
+SELECT 'Anime BD Tier 03 (SeaDex Muxers)', 'ZR', re.name
+FROM regular_expressions re
+WHERE re.name = 'ZR';
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime BD Tier 04 (SeaDex Muxers)', 'ABdex', re.name
 FROM regular_expressions re
@@ -5167,6 +5191,9 @@ INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, re
 SELECT 'Anime LQ Groups', 'Raw Files', re.name
 FROM regular_expressions re
 WHERE re.name = 'Raw Files';
+
+-- New LQ group patterns added from TRaSH Guides update
+
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime Raws', 'AsukaRaws', re.name
 FROM regular_expressions re
