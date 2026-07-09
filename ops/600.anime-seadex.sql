@@ -1318,7 +1318,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 01 (Muxers)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1330,7 +1330,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 02 (Top FanSubs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1342,7 +1342,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 03 (Official Subs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1354,7 +1354,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 04 (Official Subs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1366,7 +1366,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 05 (FanSubs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
@@ -1378,7 +1378,7 @@ SELECT cf.name, 'WEBRIP', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
 INSERT OR IGNORE INTO custom_format_conditions (custom_format_name, name, type, arr_type, negate, required)
-SELECT cf.name, 'HDTV', 'source', 'all', 0, 0
+SELECT cf.name, 'Television', 'source', 'all', 0, 0
 FROM custom_formats cf
 WHERE cf.name = 'Anime Web Tier 06 (FanSubs)';
 
@@ -5335,37 +5335,37 @@ VALUES ('Anime Web Tier 01 (Muxers)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 01 (Muxers)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 01 (Muxers)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 01 (Muxers)', 'Television', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 02 (Top FanSubs)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 02 (Top FanSubs)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 02 (Top FanSubs)', 'Television', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 03 (Official Subs)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 03 (Official Subs)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 03 (Official Subs)', 'Television', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 04 (Official Subs)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 04 (Official Subs)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 04 (Official Subs)', 'Television', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 05 (FanSubs)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 05 (FanSubs)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 05 (FanSubs)', 'Television', 'television');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 06 (FanSubs)', 'WEBDL', 'web_dl');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
 VALUES ('Anime Web Tier 06 (FanSubs)', 'WEBRIP', 'webrip');
 INSERT INTO condition_sources (custom_format_name, condition_name, source)
-VALUES ('Anime Web Tier 06 (FanSubs)', 'HDTV', 'television');
+VALUES ('Anime Web Tier 06 (FanSubs)', 'Television', 'television');
 INSERT OR IGNORE INTO condition_patterns (custom_format_name, condition_name, regular_expression_name)
 SELECT 'Anime LQ Groups', '$tore-Chill', re.name
 FROM regular_expressions re
