@@ -45,7 +45,7 @@ ALL_TIER_CF_NAMES = BD_CF_NAMES | WEB_CF_NAMES
 LQ_CF_NAME = 'Anime LQ Groups'
 
 _REGEX_INSERT_RE = re.compile(
-    r"INSERT OR IGNORE INTO regular_expressions \(name, pattern, description\) "
+    r"INSERT OR IGNORE INTO regular_expressions \(name, pattern, description\)\s*"
     r"VALUES \('([^']*)', '((?:[^']|'')*)', ''\);"
 )
 _REGEX_UPDATE_RE = re.compile(
