@@ -1,17 +1,27 @@
 """
 Shared fetch helpers for TRaSH Guides anime custom-format JSON, SeaDex
 "isBest" release-group counts, and nekoBT group/upload data. Used by
-tier_diff.py, update_tiers.py, and nekobt_tier_signals.py.
+tier_compare.py, update_tiers.py, nekobt_tier_signals.py, and
+nekobt_tier_audit.py.
 
 No auth or CLI dependency (gh) required -- TRaSH's raw GitHub content, the
 SeaDex API, and nekoBT's public API are all reachable with a plain HTTP GET
 (confirmed 2026-09-12 -- despite wiki.nekobt.to blocking non-browser fetches
 via Cloudflare, nekobt.to/api/v1 itself does not).
+
+_get() paces every request (~0.25s) and retries on HTTP 429 honoring
+Retry-After, so every function here is rate-limit-safe by default -- callers
+don't need their own backoff logic. DiskCache + nekobt_group_signal_cached()
+give the two nekoBT scripts a shared, TTL'd cache so repeated runs (or
+--limit-interrupted ones) don't re-fetch groups already checked recently.
 """
 
 import json
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
 TRASH_RAW_BASE = "https://raw.githubusercontent.com/TRaSH-Guides/Guides/master/docs/json/sonarr/cf"
 SEADEX_API = "https://releases.moe/api/collections/torrents/records"
@@ -30,12 +40,28 @@ NEKOBT_CODECS = {
 }
 
 _UA = {"User-Agent": "profilarr-anime-tier-sync"}
+_PACING_SECONDS = 0.25
+_MAX_RETRIES = 5
 
 
 def _get(url):
     req = urllib.request.Request(url, headers=_UA)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read()
+    delay = _PACING_SECONDS
+    for attempt in range(_MAX_RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = resp.read()
+            time.sleep(_PACING_SECONDS)
+            return data
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < _MAX_RETRIES - 1:
+                retry_after = float(e.headers.get("Retry-After", delay * 2))
+                print(f"    rate limited on {url}, waiting {retry_after}s...", flush=True)
+                time.sleep(retry_after)
+                delay *= 2
+            else:
+                raise
+    raise RuntimeError(f"Gave up on {url} after {_MAX_RETRIES} attempts")
 
 
 def fetch_tier_json(filename):
@@ -115,3 +141,56 @@ def nekobt_group_signal(group_id):
         bucket["avg_completed"] = round(bucket.pop("_dl") / bucket["count"], 1)
 
     return {"total_releases": len(results), "by_type": by_type}
+
+
+class DiskCache:
+    """
+    Minimal JSON-file-backed cache with a TTL, used by the nekoBT scripts so
+    repeated/interrupted runs don't re-fetch groups checked recently. Not
+    thread-safe, not meant for anything beyond these scripts' single-process
+    use. Call .save() when done (or periodically during a long run).
+    """
+
+    def __init__(self, path, ttl_seconds):
+        self.path = Path(path)
+        self.ttl = ttl_seconds
+        self.data = json.loads(self.path.read_text(encoding="utf-8")) if self.path.exists() else {}
+
+    def get(self, key, ignore_ttl=False):
+        entry = self.data.get(key)
+        if entry is None:
+            return None
+        if not ignore_ttl and (time.time() - entry.get("_cached_at", 0)) >= self.ttl:
+            return None
+        return entry
+
+    def set(self, key, value):
+        value = dict(value)
+        value["_cached_at"] = time.time()
+        self.data[key] = value
+
+    def save(self):
+        # No sort_keys: nested 'levels' dicts in nekoBT signals can mix int
+        # and None keys (no-subs releases report level=None), which
+        # json.dumps(sort_keys=True) can't compare.
+        self.path.write_text(json.dumps(self.data, indent=2), encoding="utf-8")
+
+
+def nekobt_group_signal_cached(name, cache):
+    """
+    nekobt_find_group + nekobt_group_signal in one call, transparently cached
+    in `cache` (a DiskCache). Returns {'found': bool, 'signal': dict|None}
+    (plus 'group_id' when found). Does NOT call cache.save() -- callers
+    control when to persist (e.g. periodic checkpoints during a long scan).
+    """
+    cached = cache.get(name)
+    if cached is not None:
+        return cached
+
+    g = nekobt_find_group(name)
+    if g is None:
+        result = {"found": False, "signal": None}
+    else:
+        result = {"found": True, "group_id": g["id"], "signal": nekobt_group_signal(g["id"])}
+    cache.set(name, result)
+    return result

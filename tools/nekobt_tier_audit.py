@@ -17,6 +17,15 @@ history, looking for two things TRaSH's own tier lists can't tell us:
    data can't make on its own; treat any "looks off" flag here as a
    starting point to look closer, not a verdict.
 
+Before acting on any GAP finding, sanity-check two things (both bit the
+2026-09-12 run): a very low sub-level majority (mostly L0/L1) means the
+group isn't doing real fansub work even if the release count looks big --
+not tier-worthy despite passing the count threshold (see `cappybara` in
+ops/623's notes); and two different names in our SQL can resolve to the SAME
+nekoBT group (see `Kaleido`/`Kaleido-subs`, same nekoBT id, already covering
+both sides between them) -- a "gap" on both names at once is a sign to check
+for this before adding anything, not two real gaps.
+
 This is NOT a proposal to replace TRaSH as the tier backbone -- nekoBT
 doesn't have anywhere near full coverage of established groups (many
 BD-remux/scene-community groups aren't active there at all, confirmed
@@ -25,14 +34,16 @@ TRaSH's curator review or SeaDex's best-release comparison. This script only
 adds value for the subset of already-trusted groups that DO upload to
 nekoBT.
 
-Rate limits: nekoBT doesn't publish its limits. A full run checks every
-group in TIER_MAP (currently ~150-250 across 14 tier files), each needing a
-group-search + a torrent-search call, paced 300ms apart -- expect several
-minutes. Results are cached to tools/.nekobt_audit_cache.json (14-day TTL)
-so re-runs after a partial/interrupted pass, or after only using --limit,
-don't re-fetch groups already checked. Use --refresh to force re-fetching
-everything, --limit N to cap how many NEW (uncached) groups get checked in
-one run.
+Rate limits: nekoBT doesn't publish its limits, but trash_fetch._get() paces
+every request (~0.25s) and retries on 429 honoring Retry-After, so this is
+safe to run as-is. A full run checks every group in TIER_MAP (currently
+~230 across 14 tier files), each needing a group-search + (if found) a
+torrent-search call -- expect several minutes cold. Results are cached to
+tools/.nekobt_signal_cache.json (14-day TTL, shared with
+nekobt_tier_signals.py) so re-runs after a partial/interrupted pass, or after
+only using --limit, don't re-fetch groups already checked. Use --refresh to
+force re-fetching everything, --limit N to cap how many NEW (uncached)
+groups get checked in one run.
 
 Usage:
     python tools/nekobt_tier_audit.py               # full run (uses cache)
@@ -42,58 +53,25 @@ Usage:
 """
 
 import argparse
-import json
+import re
 import sys
 import time
-import urllib.error
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from trash_fetch import nekobt_find_group, nekobt_group_signal, NEKOBT_VIDEO_TYPES
+from trash_fetch import nekobt_group_signal_cached, DiskCache
 from ops_state import TIER_MAP, BD_CF_NAMES, WEB_CF_NAMES, build_effective_state
 
-CACHE_PATH = Path(__file__).parent / ".nekobt_audit_cache.json"
+CACHE_PATH = Path(__file__).parent / ".nekobt_signal_cache.json"
 CACHE_TTL_SECONDS = 14 * 24 * 3600
-REQUEST_PACING = 0.3
 
 BD_VIDEO_TYPES = {'Hybrid', 'BD-Remux', 'BD-Encode', 'BD-Mini', 'BD-Disc'}
 WEB_VIDEO_TYPES = {'WEB-DL', 'WEB-Encode', 'WEB-Mini'}
 MIN_RELEASES_FOR_SIGNAL = 2  # below this, too thin to flag a gap
 
 
-def load_cache():
-    if CACHE_PATH.exists():
-        return json.loads(CACHE_PATH.read_text(encoding='utf-8'))
-    return {}
-
-
-def save_cache(cache):
-    # No sort_keys: nested 'levels' dicts can mix int and None keys (no-subs
-    # releases report level=None), which sorted() can't compare.
-    CACHE_PATH.write_text(json.dumps(cache, indent=2), encoding='utf-8')
-
-
-def fetch_with_backoff(fn, *args):
-    delay = REQUEST_PACING
-    for attempt in range(5):
-        try:
-            result = fn(*args)
-            time.sleep(REQUEST_PACING)
-            return result
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                retry_after = float(e.headers.get('Retry-After', delay * 2))
-                print(f"    rate limited, waiting {retry_after}s...", flush=True)
-                time.sleep(retry_after)
-                delay *= 2
-            else:
-                raise
-    raise RuntimeError("Gave up after repeated 429s")
-
-
 def current_tier_map():
     """group -> {'BD': {tier_num, ...}, 'WEB': {tier_num, ...}}"""
-    import re
     _, group_state = build_effective_state()
     out = {}
     for filename, cf_name in TIER_MAP.items():
@@ -105,26 +83,21 @@ def current_tier_map():
 
 
 def bucket_signal(signal):
-    """Collapse a nekobt_group_signal() result into BD/WEB release counts + summary."""
+    """Collapse a nekobt_group_signal() result into BD/WEB release counts."""
     bd_count = sum(b['count'] for t, b in signal['by_type'].items() if t in BD_VIDEO_TYPES)
     web_count = sum(b['count'] for t, b in signal['by_type'].items() if t in WEB_VIDEO_TYPES)
     return bd_count, web_count
 
 
 def audit_group(name, tiers, cache, refresh):
-    cached = cache.get(name)
-    now = time.time()
-    if cached and not refresh and (now - cached.get('checked_at', 0)) < CACHE_TTL_SECONDS:
-        found, signal = cached['found'], cached.get('signal')
-    else:
-        g = fetch_with_backoff(nekobt_find_group, name)
-        found = g is not None
-        signal = fetch_with_backoff(nekobt_group_signal, g['id']) if found else None
-        cache[name] = {'checked_at': now, 'found': found, 'signal': signal}
+    if refresh:
+        cache.data.pop(name, None)
+    result = nekobt_group_signal_cached(name, cache)
 
-    if not found or not signal or signal['total_releases'] == 0:
+    if not result['found'] or not result['signal'] or result['signal']['total_releases'] == 0:
         return None
 
+    signal = result['signal']
     bd_count, web_count = bucket_signal(signal)
     has_bd_tier = bool(tiers.get('BD'))
     has_web_tier = bool(tiers.get('WEB'))
@@ -141,6 +114,16 @@ def audit_group(name, tiers, cache, refresh):
     }
 
 
+def print_result(name, result):
+    tier_str = ", ".join(f"{k}T{n:02d}" for k, ns in result['tiers'].items() for n in ns) or "(none)"
+    print(f"\n{name}  [current: {tier_str}]")
+    for f in result['findings']:
+        print(f"  {f}")
+    for vtype, bucket in sorted(result['signal']['by_type'].items(), key=lambda x: -x[1]['count']):
+        levels = ", ".join(f"L{k}:{v}" for k, v in sorted(bucket['levels'].items(), key=lambda x: (x[0] is None, x[0])))
+        print(f"    {vtype:12} n={bucket['count']:<3} levels=[{levels}]")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--limit', type=int, default=None, help='max NEW (uncached) groups to check')
@@ -148,16 +131,16 @@ def main():
     ap.add_argument('--group', help='check a single group by name and exit')
     args = ap.parse_args()
 
-    cache = load_cache()
+    cache = DiskCache(CACHE_PATH, CACHE_TTL_SECONDS)
 
     if args.group:
         tiers = current_tier_map().get(args.group, {'BD': set(), 'WEB': set()})
         result = audit_group(args.group, tiers, cache, args.refresh)
-        save_cache(cache)
+        cache.save()
         if result is None:
             print(f"{args.group}: not on nekoBT, or zero uploads.")
             return
-        print(json.dumps(result, indent=2, default=list))
+        print_result(args.group, result)
         return
 
     print("Building current tier state...", flush=True)
@@ -166,7 +149,7 @@ def main():
 
     gaps, checked_new = [], 0
     for i, (name, tiers) in enumerate(sorted(tier_map.items())):
-        already_cached = name in cache and not args.refresh and (time.time() - cache[name].get('checked_at', 0)) < CACHE_TTL_SECONDS
+        already_cached = cache.get(name) is not None and not args.refresh
         if args.limit is not None and not already_cached and checked_new >= args.limit:
             print(f"\nHit --limit {args.limit} new lookups, stopping ({i}/{len(tier_map)} scanned). Re-run to continue -- cache carries over.")
             break
@@ -176,9 +159,9 @@ def main():
         if result and result['findings']:
             gaps.append((name, result))
         if (i + 1) % 25 == 0:
-            save_cache(cache)  # checkpoint periodically in case of interruption
+            cache.save()  # checkpoint periodically in case of interruption
 
-    save_cache(cache)
+    cache.save()
 
     print("\n" + "=" * 70)
     print("CROSS-SOURCE COVERAGE GAPS")
@@ -186,13 +169,7 @@ def main():
     if not gaps:
         print("None found.")
     for name, result in gaps:
-        tier_str = ", ".join(f"{k}T{n:02d}" for k, ns in result['tiers'].items() for n in ns) or "(none)"
-        print(f"\n{name}  [current: {tier_str}]")
-        for f in result['findings']:
-            print(f"  {f}")
-        for vtype, bucket in sorted(result['signal']['by_type'].items(), key=lambda x: -x[1]['count']):
-            levels = ", ".join(f"L{k}:{v}" for k, v in sorted(bucket['levels'].items(), key=lambda x: (x[0] is None, x[0])))
-            print(f"    {vtype:12} n={bucket['count']:<3} levels=[{levels}]")
+        print_result(name, result)
 
 
 if __name__ == "__main__":

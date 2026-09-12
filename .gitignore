@@ -1,4 +1,4 @@
 /.obsidian
 __pycache__/
 *.pyc
-tools/.nekobt_audit_cache.json
+tools/.nekobt_signal_cache.json
