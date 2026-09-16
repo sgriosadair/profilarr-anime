@@ -33,6 +33,7 @@ from ops_state import (
     make_regex_insert, make_regex_update,
     make_cond_insert, make_cond_delete,
     make_pattern_insert, make_pattern_delete,
+    to_group_safe_pattern,
 )
 
 # Manual LQ bookkeeping. TRaSH publishes anime-lq-groups.json too, but as of
@@ -74,16 +75,39 @@ def main():
     # different pattern would generate two conflicting UPDATEs in the same
     # ops file. First occurrence (TIER_MAP order) wins, same convention the
     # old version of this script used for new-group regex inserts.
+    # TRaSH's own patterns are written for release_title matching (raw
+    # title, brackets/dash intact) -- but every condition here is
+    # release_group, tested against Sonarr's already-stripped parsed group
+    # field. Adapt before they ever reach regex_adds/regex_updates below, or
+    # every sync either writes a group that can never match, or -- worse --
+    # regresses an already-fixed local pattern back to the broken shape (see
+    # ops/606, which did exactly that to ZigZag/NAN0/PMR; ops/625 fixed the
+    # fallout). Anything that doesn't fit the recognized `\[X\]|-X` shape
+    # comes back None and is surfaced below instead of applied blind.
     all_trash_patterns = {}
+    unadaptable = []
     for trash_groups in trash_tiers.values():
         for name, pattern in trash_groups.items():
-            all_trash_patterns.setdefault(name, pattern)
+            if name in all_trash_patterns:
+                continue
+            adapted = to_group_safe_pattern(pattern)
+            if adapted is None:
+                unadaptable.append((name, pattern))
+                continue
+            all_trash_patterns[name] = adapted
+
+    if unadaptable:
+        print(f"\n  {len(unadaptable)} group(s) have an upstream pattern this script doesn't "
+              f"recognize -- skipped, review by hand:")
+        for name, pattern in unadaptable:
+            print(f"    {name!r}: {pattern!r}")
 
     regex_adds = {}    # name -> pattern
     regex_updates = []  # (name, old_pattern, new_pattern)
     cond_adds = []       # (cf, group)
     cond_removes = []    # (cf, group)
 
+    unadaptable_names = {name for name, _ in unadaptable}
     for cf_name, trash_groups in trash_tiers.items():
         current = group_state.get(cf_name, set())
         # A group pinned to a different CF should never get added here, and
@@ -91,7 +115,12 @@ def main():
         # just because TRaSH doesn't (or no longer) lists it here.
         pinned_here = {g for g, target in TIER_OVERRIDES.items() if target == cf_name}
         pinned_elsewhere = {g for g, target in TIER_OVERRIDES.items() if target != cf_name}
-        to_add = sorted((set(trash_groups) - current) - pinned_elsewhere)
+        # Skip unadaptable-pattern groups entirely rather than adding a tier
+        # condition with no usable regex behind it -- that's exactly how
+        # Poopoo/StaFer sat inert for two months after ops/622 (fixed in
+        # ops/625). Better to surface it above and let a human add it once
+        # the pattern's sorted out.
+        to_add = sorted((set(trash_groups) - current) - pinned_elsewhere - unadaptable_names)
         to_remove = sorted((current - set(trash_groups)) - pinned_here)
 
         for g in to_add:

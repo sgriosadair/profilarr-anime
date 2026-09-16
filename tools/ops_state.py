@@ -48,9 +48,17 @@ _REGEX_INSERT_RE = re.compile(
     r"INSERT OR IGNORE INTO regular_expressions \(name, pattern, description\)\s*"
     r"VALUES \('([^']*)', '((?:[^']|'')*)', ''\);"
 )
+# Two export shapes seen in the wild, differing only in keyword case and
+# whether identifiers are double-quoted -- Profilarr's own export format has
+# changed over time (older: `UPDATE regular_expressions SET pattern = ...`,
+# newer: `update "regular_expressions" set "pattern" = ...`). Tolerate both
+# so a future format drift doesn't silently drop statements from replay --
+# this bit us for real on ops/624 (Judas, ASW fixes went unseen until this
+# was widened).
 _REGEX_UPDATE_RE = re.compile(
-    r"UPDATE regular_expressions SET pattern = '((?:[^']|'')*)' "
-    r"WHERE name = '([^']+)' AND pattern = '(?:[^']|'')*';"
+    r"UPDATE\s+\"?regular_expressions\"?\s+SET\s+\"?pattern\"?\s*=\s*'((?:[^']|'')*)'\s*"
+    r"WHERE\s+\"?name\"?\s*=\s*'([^']+)'\s+AND\s+\"?pattern\"?\s*=\s*'(?:[^']|'')*'\s*;",
+    re.IGNORECASE,
 )
 # Base-import shape (600.anime-seadex.sql and our own generated diffs):
 # INSERT OR IGNORE ... SELECT cf.name, 'GROUP', ... FROM custom_formats cf WHERE cf.name = 'CF';
@@ -84,14 +92,61 @@ _COND_DELETE_RE = re.compile(
 # Observed live-edit case: converting an existing condition's type to
 # release_group in place (e.g. a group misfiled as release_title, fixed via
 # the UI) rather than deleting and re-inserting. Treated as an add.
+# Tolerates both the unquoted/uppercase and quoted/lowercase export shapes,
+# same rationale as _REGEX_UPDATE_RE above.
 _COND_TYPE_TO_RELEASE_GROUP_RE = re.compile(
-    r"UPDATE custom_format_conditions\s*"
-    r"SET type\s*=\s*'release_group'\s*"
-    r"WHERE custom_format_name\s*=\s*'([^']+)'\s*"
-    r"AND name\s*=\s*'([^']+)'\s*"
-    r"AND type\s*=\s*'[^']+'",
-    re.DOTALL,
+    r"UPDATE\s+\"?custom_format_conditions\"?\s*"
+    r"SET\s+\"?type\"?\s*=\s*'release_group'\s*"
+    r"WHERE\s+\"?custom_format_name\"?\s*=\s*'([^']+)'\s*"
+    r"AND\s+\"?name\"?\s*=\s*'([^']+)'\s*"
+    r"AND\s+\"?type\"?\s*=\s*'[^']+'",
+    re.DOTALL | re.IGNORECASE,
 )
+
+
+def to_group_safe_pattern(pattern):
+    """Adapt a title-oriented regex (TRaSH's own convention: brackets/dash
+    required, e.g. \\[GROUP\\]|-GROUP\\b) into one that also matches Sonarr's
+    *parsed* release_group field, which has those delimiters already
+    stripped -- a release_group condition never sees the raw title.
+
+    Returns the adapted pattern, or None if the input doesn't match the
+    recognized `\\[X\\]|-X<tail>` shape and needs a human to look at it (see
+    ops/625 for the shapes that needed hand review: exclusion lookarounds
+    tied to a sibling group, inline case-insensitive wrappers, boundary bugs
+    next to a symbol character, etc.). Never silently passes through an
+    unrecognized shape -- that's how ops/606 shipped `NAN0`/`PMR`/`ZigZag`
+    regressions in the first place.
+
+    A pattern already in the safe `(?<=^|...)X...` form is returned
+    unchanged, and so is one with no bracket/lookaround dependency at all
+    (a bare `\\b(...)…\\b` literal, e.g. simple_regex()'s output) -- this
+    keeps re-running a sync from proposing a no-op "drift" fix every time.
+    Anything else that doesn't start with `\\[` is NOT assumed safe (that
+    was the original bug here: `(?<=remux).*\\b(NAN0)\\b` doesn't start
+    with `\\[` either, and title-only lookarounds like that one are exactly
+    what needs catching) -- it comes back None too.
+    """
+    if '(?<=^|' in pattern:
+        return pattern
+    if '\\[' not in pattern and '(?<=' not in pattern and '(?!' not in pattern:
+        return pattern
+    if not pattern.startswith('\\['):
+        return None
+    close_idx = pattern.find('\\]')
+    if close_idx == -1:
+        return None
+    bracket_content = pattern[2:close_idx]
+    rest = pattern[close_idx + 2:]
+    if not rest.startswith('|-'):
+        return None
+    after_dash = rest[2:]
+    if not after_dash.startswith(bracket_content):
+        return None
+    tail = after_dash[len(bracket_content):]
+    if not tail:
+        tail = '\\b'
+    return f"(?<=^|[\\s.-]){bracket_content}{tail}"
 
 
 def sq(s):
